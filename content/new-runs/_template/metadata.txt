@@ -1,0 +1,22 @@
+# Required fields
+run: 44
+date: 2026-09-06
+location: City, State/Province, Country
+distance_miles: 13.10
+duration: 02:10:00
+shoes: Shoe model
+
+# Optional fields
+distance_km:
+region:
+device: Pixel Watch 4
+elevation_ft:
+audiobook:
+company:
+summary_en:
+summary_pt:
+
+# Company names: separate multiple names with a vertical bar.
+# Example: Paula Loures | Mark Lee | Jeff Bowers
+# Leave elevation_ft blank until you have verified the value.
+# Put a normal YouTube URL on its own line in either Markdown file to create an embedded video at that point in the article.

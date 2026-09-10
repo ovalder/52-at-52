@@ -1,41 +1,1271 @@
-[
-  {
-    "notes": "Run: 43\ndate: Aug 30, 2026\nlocation: Aracaju, Sergipe, Brazil\ndistance: 15.25 mi\nduration: 02:27:13\nwatch: Pixel Watch 4\nshoes: Altra Torin 8\naudiobook: none\n",
-    "run_number": 43,
-    "media": [
-      "media/run43_001.jpg",
-      "media/run43_002.jpg",
-      "media/run43_003.jpg",
-      "media/run43_004.jpg",
-      "media/run43_005.jpg",
-      "media/run43_006.jpg",
-      "media/run43_007.jpg",
-      "media/run43_008.jpg",
-      "media/run43_009.jpg",
-      "media/run43_010.jpg",
-      "media/run43_011.jpg",
-      "media/run43_012.jpg",
-      "media/run43_013.png",
-      "media/run43_014.jpg",
-      "media/run43_015.jpg",
-      "media/run43_016.jpg",
-      "media/run43_017.jpg",
-      "media/run43_018.jpg",
-      "media/run43_019.jpg",
-      "media/run43_020.jpg",
-      "media/run43_021.jpg",
-      "media/run43_022.jpg",
-      "media/run43_023.jpg",
-      "media/run43_024.jpg",
-      "media/run43_025.jpg",
-      "media/run43_026.jpg",
-      "media/run43_027.jpg",
-      "media/run43_028.jpg",
-      "media/run43_029.jpg",
-      "media/run43_030.png"
-    ],
-    "content": {
-      "en": "# Run #43 – First Official Race: 25K by the Sea at UMS\n\n**Tagline: Beach sand, river paths, and one very lucky bottle of cold water.**\n\nRun number 43 broke new ground for the 52@52 project: for the very first time, one of the half marathons was completed inside an official event race, the 25K distance of UMS – Ultramaratona Sergipe, an ambitious gathering in Aracaju that also staged 50K and 100K races and pulled in runners from several Brazilian states.\n\n## A rare weekend at home, put to perfect use\n\nThis was the only weekend I would be in Aracaju for a while, so having a real event to run instead of another solo half marathon felt like a small gift from the calendar. Toeing a start line again, surrounded by runners who had traveled in from all over the country for the 50K and 100K distances too, gave the whole morning a different kind of energy than the usual self-organized runs.\n\n## The route: ocean, river, and the beach finish\n\nThe 25K course turned out to be one of the best routes of the whole 52@52 challenge so far. It hugged the ocean, ran alongside the Sergipe River, mixed paved stretches with unpaved sandy paths, and then closed with a finishing stretch straight over the beach sand. Aracaju's beaches are almost custom-built for this kind of finish: a wide, flat, compacted strip of sand that runs firm underfoot instead of the loose, ankle-twisting sand you'd expect. Finishing a half marathon with the ocean on one side and that kind of surface under the feet is hard to beat.\n\n## The result: 6th in category, despite the heat\n\nThe performance was solid. Even with the heat and humidity working against every runner on the course, I crossed the line in 6th place in my age category (50 to 59). The distance ran a bit long, as event courses often do — official 25K, but my Google Pixel 4 logged 24.5K, which tracks with how these things usually shake out on race day.\n\n## A smart touch: the WhatsApp channel\n\nOne detail from the organization deserves its own callout. Before the race, UMS set up a WhatsApp channel for each distance, with only the organizers able to post. It became the go-to spot for race-day logistics, updates, and reminders, all in one place instead of digging through emails. After the race, they opened that same channel up so all participants could chat among themselves — sharing opinions about the race, links to photos and recap posts, tips on upcoming races, and even products they use and recommend. It turned the channel into a lasting hub where finishers could connect with each other after the fact. My one suggestion: split it into two channels from the start, one strictly for organizer announcements and a separate one open for participants to talk among themselves from day one, instead of switching the same channel over after the fact. I've never seen this done at any race I ran in the US, and this was the first time I saw it in Brazil too (though I admit I haven't run many races there in recent years). I really hope more organizers pick this up, because it works great.\n\n## The water story: lucky me, unlucky many\n\nThe most memorable part of the day came after the finish, inside that same WhatsApp channel for the 25K runners. It turned out I had been lucky: I found water at every hydration station along the course, mostly at room temperature but with a few very welcome cold cups mixed in. A lot of other runners were not so fortunate. Several stations ran dry, and plenty of people had to make an unplanned stop at a grocery store along the route just to buy something, anything, to drink. Even that backup plan failed for many, since the store itself ran out of both water and soda before the field had passed through. It is a rough experience to hear about after a hot, humid 25K, and I hope UMS takes the lesson into next year's edition — hydration on course is not optional in this climate.\n\n## Gel report: one No, one reliable Yes\n\nRace kit gels are always a gamble, and this one confirmed it. I tried the DURAGEL Nitro400 that came with the race kit, and it was not a great experience — the taste was off, and it had these little crystals, probably sugar, that felt bad in the mouth while chewing through it. On the plus side, it was at least easy to swallow. Overall verdict: a firm no for me, I couldn't even finish the packet. I also brought a couple of Huma gels along as backup, and the Mango Huma delivered exactly what I've come to expect from it — smooth and pleasant, no complaints. I never even got around to opening the second Huma gel I carried, which says a lot about how comfortable the effort felt.\n\n## Legs, knees, and no audiobook\n\nDespite the longer-than-advertised distance and the typical northeastern Brazilian \"winter\" heat (which, as always, is not particularly cold), the legs and knees stayed quiet the whole way. No complaints during the run, just the expected tiredness the next day and nothing more. For this one, I skipped the audiobook entirely, choosing instead to stay fully soaked into the event atmosphere and take in the views along the ocean and the river — a decision that paid off given how good this route was.\n\nRun #43 down. A new format unlocked for the 52@52 challenge, a course worth remembering, and a good reminder to always carry a backup plan for hydration on race day.\n\nSee you next time!\n"
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-09T21:39:31",
+  "missing_value": "NA",
+  "runs": [
+    {
+      "run_number": 1,
+      "date": "2025-11-08",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.14,
+      "distance_km": 21.15,
+      "duration": "2:08:47",
+      "pace_per_mile": "9:48",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #1 on 2025-11-08 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #1 em 2025-11-08 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-01-en.html",
+          "title": "52@52: Run #1 Recap"
+        },
+        "pt": {
+          "file": "posts/run-01-pt.html",
+          "title": "52@52: Corrida #1"
+        }
+      }
+    },
+    {
+      "run_number": 2,
+      "date": "2025-11-15",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.12,
+      "distance_km": 21.11,
+      "duration": "2:06:15",
+      "pace_per_mile": "9:37",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #2 on 2025-11-15 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #2 em 2025-11-15 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-02-en.html",
+          "title": "52@52 Challenge - Run #2"
+        },
+        "pt": {
+          "file": "posts/run-02-pt.html",
+          "title": "52@52 Challenge - Run #2"
+        }
+      }
+    },
+    {
+      "run_number": 3,
+      "date": "2025-11-22",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.15,
+      "distance_km": 21.16,
+      "duration": "2:07:30",
+      "pace_per_mile": "9:42",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #3 on 2025-11-22 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #3 em 2025-11-22 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-03-en.html",
+          "title": "NA"
+        },
+        "pt": {
+          "file": "posts/run-03-pt.html",
+          "title": "NA"
+        }
+      }
+    },
+    {
+      "run_number": 4,
+      "date": "2025-11-29",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.11,
+      "distance_km": 21.1,
+      "duration": "2:05:10",
+      "pace_per_mile": "9:33",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #4 on 2025-11-29 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #4 em 2025-11-29 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-04-en.html",
+          "title": "Run #4 - 52@52"
+        },
+        "pt": {
+          "file": "posts/run-04-pt.html",
+          "title": "Corrida #4 - 52@52"
+        }
+      }
+    },
+    {
+      "run_number": 5,
+      "date": "2025-12-06",
+      "location": "Home to Google Cafe (MV)",
+      "region": "California",
+      "distance_miles": 13.18,
+      "distance_km": 21.21,
+      "duration": "2:09:40",
+      "pace_per_mile": "9:50",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #5 on 2025-12-06 at Home to Google Cafe (MV).",
+      "summary_pt": "Corrida #5 em 2025-12-06 em Home to Google Cafe (MV).",
+      "content": {
+        "en": {
+          "file": "posts/run-05-en.html",
+          "title": "Race #5: Home to Google Café @ Mountain View"
+        },
+        "pt": {
+          "file": "posts/run-05-pt.html",
+          "title": "Corrida #5: De casa até o Google Café @ Mountain View"
+        }
+      }
+    },
+    {
+      "run_number": 6,
+      "date": "2025-12-13",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.12,
+      "distance_km": 21.11,
+      "duration": "2:04:55",
+      "pace_per_mile": "9:31",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Hoka Clifton 8",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #6 on 2025-12-13 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #6 em 2025-12-13 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-06-en.html",
+          "title": "Race #6: A Solo Run, A New Camera Setup, and a Warning from My Knee"
+        },
+        "pt": {
+          "file": "posts/run-06-pt.html",
+          "title": "Corrida #6: Mais uma Solo, Novo Setup de Câmera e Um Aviso do Joelho"
+        }
+      }
+    },
+    {
+      "run_number": 7,
+      "date": "2025-12-20",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.14,
+      "distance_km": 21.15,
+      "duration": "2:06:30",
+      "pace_per_mile": "9:38",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Hoka Clifton 8",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #7 on 2025-12-20 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #7 em 2025-12-20 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-07-en.html",
+          "title": "Race #7: Solstice, Special Company, and the Rebel Gel"
+        },
+        "pt": {
+          "file": "posts/run-07-pt.html",
+          "title": "Corrida #7: Solstício, Companhia Especial e o Gel Rebelde"
+        }
+      }
+    },
+    {
+      "run_number": 8,
+      "date": "2025-12-27",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.1,
+      "distance_km": 21.08,
+      "duration": "2:02:18",
+      "pace_per_mile": "9:20",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Altra Escalante 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #8 on 2025-12-27 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #8 em 2025-12-27 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-08-en.html",
+          "title": "Run #8: Quiet Trail, Deer Surprise, and a Return to Minimalist Roots"
+        },
+        "pt": {
+          "file": "posts/run-08-pt.html",
+          "title": "Corrida #8: Trilha Tranquila, Surpresa com Cervos e o Retorno ao Minimalismo"
+        }
+      }
+    },
+    {
+      "run_number": 9,
+      "date": "2026-01-03",
+      "location": "Cruise Ship Track",
+      "region": "California",
+      "distance_miles": 13.15,
+      "distance_km": 21.16,
+      "duration": "2:11:45",
+      "pace_per_mile": "10:01",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Hoka Clifton 8",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #9 on 2026-01-03 at Cruise Ship Track.",
+      "summary_pt": "Corrida #9 em 2026-01-03 em Cruise Ship Track.",
+      "content": {
+        "en": {
+          "file": "posts/run-09-en.html",
+          "title": "Run #9 - on a cruise ship"
+        },
+        "pt": {
+          "file": "posts/run-09-pt.html",
+          "title": "Corrida #9 - em alto mar"
+        }
+      }
+    },
+    {
+      "run_number": 10,
+      "date": "2026-01-10",
+      "location": "Guadalupe River Trail",
+      "region": "California",
+      "distance_miles": 13.13,
+      "distance_km": 21.13,
+      "duration": "2:04:12",
+      "pace_per_mile": "9:27",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Altra Escalante 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #10 on 2026-01-10 at Guadalupe River Trail.",
+      "summary_pt": "Corrida #10 em 2026-01-10 em Guadalupe River Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-10-en.html",
+          "title": "Run #10: Creekside Sun and Born to Run"
+        },
+        "pt": {
+          "file": "posts/run-10-pt.html",
+          "title": "Corrida #10: Sol, Margem do Rio e Born to Run"
+        }
+      }
+    },
+    {
+      "run_number": 11,
+      "date": "2026-01-17",
+      "location": "Golden Gate Park / Ocean Beach",
+      "region": "California",
+      "distance_miles": 13.2,
+      "distance_km": 21.24,
+      "duration": "2:08:22",
+      "pace_per_mile": "9:43",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #11 on 2026-01-17 at Golden Gate Park / Ocean Beach.",
+      "summary_pt": "Corrida #11 em 2026-01-17 em Golden Gate Park / Ocean Beach.",
+      "content": {
+        "en": {
+          "file": "posts/run-11-en.html",
+          "title": "Run #11: Golden Gate Park, Ocean Waves, and a Very Happy Knee"
+        },
+        "pt": {
+          "file": "posts/run-11-pt.html",
+          "title": "Corrida #11: Golden Gate Park, Ondas do Oceano e um Joelho Muito Feliz"
+        }
+      }
+    },
+    {
+      "run_number": 12,
+      "date": "2026-01-18",
+      "location": "SF Bay Trail",
+      "region": "California",
+      "distance_miles": 13.11,
+      "distance_km": 21.1,
+      "duration": "2:05:40",
+      "pace_per_mile": "9:35",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #12 on 2026-01-18 at SF Bay Trail.",
+      "summary_pt": "Corrida #12 em 2026-01-18 em SF Bay Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-12-en.html",
+          "title": "Corrida #12: sunshine in the SF Bay"
+        },
+        "pt": {
+          "file": "posts/run-12-pt.html",
+          "title": "Run #12: sol na Baía de SF"
+        }
+      }
+    },
+    {
+      "run_number": 13,
+      "date": "2026-01-25",
+      "location": "Hellyer County Park",
+      "region": "California",
+      "distance_miles": 13.14,
+      "distance_km": 21.15,
+      "duration": "2:01:50",
+      "pace_per_mile": "9:16",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #13 on 2026-01-25 at Hellyer County Park.",
+      "summary_pt": "Corrida #13 em 2026-01-25 em Hellyer County Park.",
+      "content": {
+        "en": {
+          "file": "posts/run-13-en.html",
+          "title": "Run #13 - Friends on the park, Yves PR!"
+        },
+        "pt": {
+          "file": "posts/run-13-pt.html",
+          "title": "Corrida #13 - Amigos no parque, recorde do Yves!"
+        }
+      }
+    },
+    {
+      "run_number": 14,
+      "date": "2026-02-01",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.12,
+      "distance_km": 21.11,
+      "duration": "2:06:18",
+      "pace_per_mile": "9:37",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #14 on 2026-02-01 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #14 em 2026-02-01 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-14-en.html",
+          "title": "Run #14 - Coyote Creek again"
+        },
+        "pt": {
+          "file": "posts/run-14-pt.html",
+          "title": "Corrida #14 - Coyote Creek de novo"
+        }
+      }
+    },
+    {
+      "run_number": 15,
+      "date": "2026-02-14",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.16,
+      "distance_km": 21.18,
+      "duration": "2:07:44",
+      "pace_per_mile": "9:42",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Altra Rivera 3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #15 on 2026-02-14 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #15 em 2026-02-14 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-15-en.html",
+          "title": "Run  #15 - Valentine’s Trail Miles and Gadget Trials"
+        },
+        "pt": {
+          "file": "posts/run-15-pt.html",
+          "title": "Corrida #15 - Quilômetros de Dia dos Namorados e testes de relógios"
+        }
+      }
+    },
+    {
+      "run_number": 16,
+      "date": "2026-02-21",
+      "location": "Sightseeing Run in Paris",
+      "region": "France",
+      "distance_miles": 13.11,
+      "distance_km": 21.1,
+      "duration": "2:05:30",
+      "pace_per_mile": "9:34",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Altra Rivera 3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #16 on 2026-02-21 at Sightseeing Run in Paris.",
+      "summary_pt": "Corrida #16 em 2026-02-21 em Sightseeing Run in Paris.",
+      "content": {
+        "en": {
+          "file": "posts/run-16-en.html",
+          "title": "Run #16 - Sightseeing Run in Paris"
+        },
+        "pt": {
+          "file": "posts/run-16-pt.html",
+          "title": "Corrida #16 - Corrida Turística em Paris"
+        }
+      }
+    },
+    {
+      "run_number": 17,
+      "date": "2026-03-01",
+      "location": "Lagoa da Pampulha (BH)",
+      "region": "Brazil",
+      "distance_miles": 13.15,
+      "distance_km": 21.16,
+      "duration": "2:09:12",
+      "pace_per_mile": "9:49",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #17 on 2026-03-01 at Lagoa da Pampulha (BH).",
+      "summary_pt": "Corrida #17 em 2026-03-01 em Lagoa da Pampulha (BH).",
+      "content": {
+        "en": {
+          "file": "posts/run-17-en.html",
+          "title": "Run #17 – Pampulha Loop"
+        },
+        "pt": {
+          "file": "posts/run-17-pt.html",
+          "title": "Corrida #17 – Volta na Pampulha"
+        }
+      }
+    },
+    {
+      "run_number": 18,
+      "date": "2026-03-07",
+      "location": "Maragogi (AL)",
+      "region": "Brazil",
+      "distance_miles": 13.12,
+      "distance_km": 21.11,
+      "duration": "2:12:05",
+      "pace_per_mile": "10:04",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #18 on 2026-03-07 at Maragogi (AL).",
+      "summary_pt": "Corrida #18 em 2026-03-07 em Maragogi (AL).",
+      "content": {
+        "en": {
+          "file": "posts/run-18-en.html",
+          "title": "Run #18 – Running in Paradise at Maragogi"
+        },
+        "pt": {
+          "file": "posts/run-18-pt.html",
+          "title": "Corrida #18 – Correndo no Paraíso em Maragogi"
+        }
+      }
+    },
+    {
+      "run_number": 19,
+      "date": "2026-03-14",
+      "location": "Aracaju (SE)",
+      "region": "Brazil",
+      "distance_miles": 13.18,
+      "distance_km": 21.21,
+      "duration": "2:10:15",
+      "pace_per_mile": "9:53",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #19 on 2026-03-14 at Aracaju (SE).",
+      "summary_pt": "Corrida #19 em 2026-03-14 em Aracaju (SE).",
+      "content": {
+        "en": {
+          "file": "posts/run-19-en.html",
+          "title": "Corrida #19 – Corrida em Três Partes em Aracaju pelo Peixe-Boi"
+        },
+        "pt": {
+          "file": "posts/run-19-pt.html",
+          "title": "Corrida #19 – Corrida em Três Partes em Aracaju pelo Peixe-Boi"
+        }
+      }
+    },
+    {
+      "run_number": 20,
+      "date": "2026-03-21",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.14,
+      "distance_km": 21.15,
+      "duration": "2:04:40",
+      "pace_per_mile": "9:29",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #20 on 2026-03-21 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #20 em 2026-03-21 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-20-en.html",
+          "title": "Run #20 – Best Crew Ever on the Coyote Creek Trail"
+        },
+        "pt": {
+          "file": "posts/run-20-pt.html",
+          "title": "Corrida #20 – Melhor equipe do mundo na Coyote Creek Trail"
+        }
+      }
+    },
+    {
+      "run_number": 21,
+      "date": "2026-03-28",
+      "location": "Stevens Creek Trail",
+      "region": "California",
+      "distance_miles": 13.12,
+      "distance_km": 21.11,
+      "duration": "2:06:50",
+      "pace_per_mile": "9:40",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #21 on 2026-03-28 at Stevens Creek Trail.",
+      "summary_pt": "Corrida #21 em 2026-03-28 em Stevens Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-21-en.html",
+          "title": "Run #21 – Spring Heat on the Stevens Creek Trail"
+        },
+        "pt": {
+          "file": "posts/run-21-pt.html",
+          "title": "Corrida #21 – Calor de Primavera na Stevens Creek Trail"
+        }
+      }
+    },
+    {
+      "run_number": 22,
+      "date": "2026-04-04",
+      "location": "Treadmill Session",
+      "region": "California",
+      "distance_miles": 13.11,
+      "distance_km": 21.1,
+      "duration": "2:14:20",
+      "pace_per_mile": "10:14",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Altra Rivera 3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #22 on 2026-04-04 at Treadmill Session.",
+      "summary_pt": "Corrida #22 em 2026-04-04 em Treadmill Session.",
+      "content": {
+        "en": {
+          "file": "posts/run-22-en.html",
+          "title": "Run #22 – The Most Boring (and Soggy) One So Far"
+        },
+        "pt": {
+          "file": "posts/run-22-pt.html",
+          "title": "Corrida #22 – A Mais Chata (e Assada) Até Agora"
+        }
+      }
+    },
+    {
+      "run_number": 23,
+      "date": "2026-04-11",
+      "location": "Iron Horse Regional Trail",
+      "region": "California",
+      "distance_miles": 13.16,
+      "distance_km": 21.18,
+      "duration": "2:05:15",
+      "pace_per_mile": "9:31",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Altra Rivera 3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #23 on 2026-04-11 at Iron Horse Regional Trail.",
+      "summary_pt": "Corrida #23 em 2026-04-11 em Iron Horse Regional Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-23-en.html",
+          "title": "Run #23 – First Time on the Iron Horse Trail"
+        },
+        "pt": {
+          "file": "posts/run-23-pt.html",
+          "title": "Corrida #23 – Primeira Vez na Iron Horse Trail"
+        }
+      }
+    },
+    {
+      "run_number": 24,
+      "date": "2026-04-12",
+      "location": "Alum Rock Park & Streets",
+      "region": "California",
+      "distance_miles": 13.15,
+      "distance_km": 21.16,
+      "duration": "2:08:35",
+      "pace_per_mile": "9:46",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #24 on 2026-04-12 at Alum Rock Park & Streets.",
+      "summary_pt": "Corrida #24 em 2026-04-12 em Alum Rock Park & Streets.",
+      "content": {
+        "en": {
+          "file": "posts/run-24-en.html",
+          "title": "Run #24 – Streets, Creek, and a Drizzly Finish to Alum Rock"
+        },
+        "pt": {
+          "file": "posts/run-24-pt.html",
+          "title": "Corrida #24 – Ruas, Córrego e Chegada Chuvosa em Alum Rock"
+        }
+      }
+    },
+    {
+      "run_number": 25,
+      "date": "2026-04-19",
+      "location": "Commute Half to Archer HQ",
+      "region": "California",
+      "distance_miles": 13.12,
+      "distance_km": 21.11,
+      "duration": "2:03:50",
+      "pace_per_mile": "9:26",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Altra Escalante 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #25 on 2026-04-19 at Commute Half to Archer HQ.",
+      "summary_pt": "Corrida #25 em 2026-04-19 em Commute Half to Archer HQ.",
+      "content": {
+        "en": {
+          "file": "posts/run-25-en.html",
+          "title": "Run #25 – Commute Half-Marathon to the Office"
+        },
+        "pt": {
+          "file": "posts/run-25-pt.html",
+          "title": "Corrida #25 – Meia Maratona no Caminho para o Trabalho"
+        }
+      }
+    },
+    {
+      "run_number": 26,
+      "date": "2026-04-26",
+      "location": "Halfway Milestone Loop",
+      "region": "California",
+      "distance_miles": 13.22,
+      "distance_km": 21.28,
+      "duration": "2:07:10",
+      "pace_per_mile": "9:37",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #26 on 2026-04-26 at Halfway Milestone Loop.",
+      "summary_pt": "Corrida #26 em 2026-04-26 em Halfway Milestone Loop.",
+      "content": {
+        "en": {
+          "file": "posts/run-26-en.html",
+          "title": "Run #26 – My Biggest Week Ever and Halfway Through 52@52"
+        },
+        "pt": {
+          "file": "posts/run-26-pt.html",
+          "title": "Corrida #26 – Minha Semana Mais Pesada e Metade do 52@52"
+        }
+      }
+    },
+    {
+      "run_number": 27,
+      "date": "2026-04-29",
+      "location": "Alum Rock Hills",
+      "region": "California",
+      "distance_miles": 13.14,
+      "distance_km": 21.15,
+      "duration": "2:11:00",
+      "pace_per_mile": "9:58",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #27 on 2026-04-29 at Alum Rock Hills.",
+      "summary_pt": "Corrida #27 em 2026-04-29 em Alum Rock Hills.",
+      "content": {
+        "en": {
+          "file": "posts/run-27-en.html",
+          "title": "Run #27 – Back on the Hills at Alum Rock"
+        },
+        "pt": {
+          "file": "posts/run-27-pt.html",
+          "title": "Corrida #27 – De Volta às Subidas no Alum Rock"
+        }
+      }
+    },
+    {
+      "run_number": 28,
+      "date": "2026-05-09",
+      "location": "Angel Island Trail",
+      "region": "California",
+      "distance_miles": 13.15,
+      "distance_km": 21.16,
+      "duration": "2:15:30",
+      "pace_per_mile": "10:18",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #28 on 2026-05-09 at Angel Island Trail.",
+      "summary_pt": "Corrida #28 em 2026-05-09 em Angel Island Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-28-en.html",
+          "title": "Run #28 – A Bay Escape on Angel Island"
+        },
+        "pt": {
+          "file": "posts/run-28-pt.html",
+          "title": "Run #28 – Uma escapada pela baía em Angel Island"
+        }
+      }
+    },
+    {
+      "run_number": 29,
+      "date": "2026-05-16",
+      "location": "Angel Island with Paula",
+      "region": "California",
+      "distance_miles": 13.12,
+      "distance_km": 21.11,
+      "duration": "2:14:15",
+      "pace_per_mile": "10:14",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #29 on 2026-05-16 at Angel Island with Paula.",
+      "summary_pt": "Corrida #29 em 2026-05-16 em Angel Island with Paula.",
+      "content": {
+        "en": {
+          "file": "posts/run-29-en.html",
+          "title": "Run #29 – Back to Angel Island, This Time with Paula 😍"
+        },
+        "pt": {
+          "file": "posts/run-29-pt.html",
+          "title": "Run #29 – De volta a Angel Island, desta vez com a Paula 😍"
+        }
+      }
+    },
+    {
+      "run_number": 30,
+      "date": "2026-05-31",
+      "location": "Coyote Creek Reset",
+      "region": "California",
+      "distance_miles": 13.14,
+      "distance_km": 21.15,
+      "duration": "2:06:10",
+      "pace_per_mile": "9:36",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Hoka Clifton 8",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #30 on 2026-05-31 at Coyote Creek Reset.",
+      "summary_pt": "Corrida #30 em 2026-05-31 em Coyote Creek Reset.",
+      "content": {
+        "en": {
+          "file": "posts/run-30-en.html",
+          "title": "Run #30 – Resetting on Coyote Creek"
+        },
+        "pt": {
+          "file": "posts/run-30-pt.html",
+          "title": "Run #30 – Reset em Coyote Creek"
+        }
+      }
+    },
+    {
+      "run_number": 31,
+      "date": "2026-06-07",
+      "location": "Seaside Coastal Trail",
+      "region": "California",
+      "distance_miles": 13.18,
+      "distance_km": 21.21,
+      "duration": "2:08:45",
+      "pace_per_mile": "9:46",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #31 on 2026-06-07 at Seaside Coastal Trail.",
+      "summary_pt": "Corrida #31 em 2026-06-07 em Seaside Coastal Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-31-en.html",
+          "title": "Run #31 – Storm Watch in Seaside"
+        },
+        "pt": {
+          "file": "posts/run-31-pt.html",
+          "title": "Run #31 – De olho na tempestade em Seaside"
+        }
+      }
+    },
+    {
+      "run_number": 32,
+      "date": "2026-06-14",
+      "location": "South Bay with Marco",
+      "region": "California",
+      "distance_miles": 13.12,
+      "distance_km": 21.11,
+      "duration": "2:04:20",
+      "pace_per_mile": "9:28",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #32 on 2026-06-14 at South Bay with Marco.",
+      "summary_pt": "Corrida #32 em 2026-06-14 em South Bay with Marco.",
+      "content": {
+        "en": {
+          "file": "posts/run-32-en.html",
+          "title": "Run #32 – South Bay Miles with a Brazilian Machine"
+        },
+        "pt": {
+          "file": "posts/run-32-pt.html",
+          "title": "Run #32 – Quilômetros no South Bay com uma máquina brasileira"
+        }
+      }
+    },
+    {
+      "run_number": 33,
+      "date": "2026-06-21",
+      "location": "Hellyer Park Fast Loop",
+      "region": "California",
+      "distance_miles": 13.15,
+      "distance_km": 21.16,
+      "duration": "2:02:40",
+      "pace_per_mile": "9:19",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Altra Escalante 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #33 on 2026-06-21 at Hellyer Park Fast Loop.",
+      "summary_pt": "Corrida #33 em 2026-06-21 em Hellyer Park Fast Loop.",
+      "content": {
+        "en": {
+          "file": "posts/run-33-en.html",
+          "title": "Run #33 – Fast Miles with Family Support"
+        },
+        "pt": {
+          "file": "posts/run-33-pt.html",
+          "title": "Run #33 – Quilômetros fortes com apoio da família"
+        }
+      }
+    },
+    {
+      "run_number": 34,
+      "date": "2026-06-28",
+      "location": "Santa Teresa Hills",
+      "region": "California",
+      "distance_miles": 13.11,
+      "distance_km": 21.1,
+      "duration": "2:05:55",
+      "pace_per_mile": "9:36",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Altra Rivera 3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #34 on 2026-06-28 at Santa Teresa Hills.",
+      "summary_pt": "Corrida #34 em 2026-06-28 em Santa Teresa Hills.",
+      "content": {
+        "en": {
+          "file": "posts/run-34-en.html",
+          "title": "Run #34 – New Trails and Good Signs"
+        },
+        "pt": {
+          "file": "posts/run-34-pt.html",
+          "title": "Run #34 – Novas trilhas e bons sinais"
+        }
+      }
+    },
+    {
+      "run_number": 35,
+      "date": "2026-07-05",
+      "location": "Alum Rock & Foundation",
+      "region": "California",
+      "distance_miles": 13.16,
+      "distance_km": 21.18,
+      "duration": "2:09:30",
+      "pace_per_mile": "9:50",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #35 on 2026-07-05 at Alum Rock & Foundation.",
+      "summary_pt": "Corrida #35 em 2026-07-05 em Alum Rock & Foundation.",
+      "content": {
+        "en": {
+          "file": "posts/run-35-en.html",
+          "title": "Run #35 – Hills, Home, and Foundation"
+        },
+        "pt": {
+          "file": "posts/run-35-pt.html",
+          "title": "Run #35 – Morros, casa e Foundation"
+        }
+      }
+    },
+    {
+      "run_number": 36,
+      "date": "2026-07-12",
+      "location": "Empire Hills Heat Run",
+      "region": "California",
+      "distance_miles": 13.12,
+      "distance_km": 21.11,
+      "duration": "2:12:10",
+      "pace_per_mile": "10:04",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #36 on 2026-07-12 at Empire Hills Heat Run.",
+      "summary_pt": "Corrida #36 em 2026-07-12 em Empire Hills Heat Run.",
+      "content": {
+        "en": {
+          "file": "posts/run-36-en.html",
+          "title": "Run #36 – Hot Trails, Cool Empire"
+        },
+        "pt": {
+          "file": "posts/run-36-pt.html",
+          "title": "Run #36 – Trilhas Quentes, Império Frio"
+        }
+      }
+    },
+    {
+      "run_number": 37,
+      "date": "2026-07-19",
+      "location": "Guadalupe Creek Trail",
+      "region": "California",
+      "distance_miles": 13.14,
+      "distance_km": 21.15,
+      "duration": "2:06:40",
+      "pace_per_mile": "9:38",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #37 on 2026-07-19 at Guadalupe Creek Trail.",
+      "summary_pt": "Corrida #37 em 2026-07-19 em Guadalupe Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-37-en.html",
+          "title": "Run #37 - Dust, bikes, and Muderbot"
+        },
+        "pt": {
+          "file": "posts/run-37-pt.html",
+          "title": "Run #37 - Poeira, bikes e Murderbot"
+        }
+      }
+    },
+    {
+      "run_number": 38,
+      "date": "2026-07-26",
+      "location": "Coyote Creek Shady Miles",
+      "region": "California",
+      "distance_miles": 13.15,
+      "distance_km": 21.16,
+      "duration": "2:04:50",
+      "pace_per_mile": "9:29",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Topo Phantom 4",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #38 on 2026-07-26 at Coyote Creek Shady Miles.",
+      "summary_pt": "Corrida #38 em 2026-07-26 em Coyote Creek Shady Miles.",
+      "content": {
+        "en": {
+          "file": "posts/run-38-en.html",
+          "title": "Run #38 – Shady Miles, Watch Drama, and a New Bike"
+        },
+        "pt": {
+          "file": "posts/run-38-pt.html",
+          "title": "Corrida #38 – Trilha com sombra, relógio com glitch, e uma nova bike"
+        }
+      }
+    },
+    {
+      "run_number": 39,
+      "date": "2026-08-02",
+      "location": "Coyote Creek Trail",
+      "region": "California",
+      "distance_miles": 13.13,
+      "distance_km": 21.13,
+      "duration": "2:03:15",
+      "pace_per_mile": "9:23",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Hoka Clifton 8",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #39 on 2026-08-02 at Coyote Creek Trail.",
+      "summary_pt": "Corrida #39 em 2026-08-02 em Coyote Creek Trail.",
+      "content": {
+        "en": {
+          "file": "posts/run-39-en.html",
+          "title": "Corrida #39 – Mesma Trilha, Tênis Novos"
+        },
+        "pt": {
+          "file": "posts/run-39-pt.html",
+          "title": "Corrida #39 – Mesma Trilha, Tênis Novos"
+        }
+      }
+    },
+    {
+      "run_number": 40,
+      "date": "2026-08-09",
+      "location": "Coyote Creek Three-Peat",
+      "region": "California",
+      "distance_miles": 13.14,
+      "distance_km": 21.15,
+      "duration": "2:05:02",
+      "pace_per_mile": "9:31",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "Hoka Clifton 8",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #40 on 2026-08-09 at Coyote Creek Three-Peat.",
+      "summary_pt": "Corrida #40 em 2026-08-09 em Coyote Creek Three-Peat.",
+      "content": {
+        "en": {
+          "file": "posts/run-40-en.html",
+          "title": "Run #40 – Three-Peat by the Creek"
+        },
+        "pt": {
+          "file": "posts/run-40-pt.html",
+          "title": "Corrida #40 – Três Seguidas pelo Creek"
+        }
+      }
+    },
+    {
+      "run_number": 41,
+      "date": "2026-08-15",
+      "location": "Alameda Creek Trail Detour",
+      "region": "California",
+      "distance_miles": 13.25,
+      "distance_km": 21.32,
+      "duration": "2:08:18",
+      "pace_per_mile": "9:41",
+      "elevation_ft": "NA",
+      "device": "NA",
+      "shoes": "NB More Trail v3",
+      "audiobook": "NA",
+      "company": "NA",
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #41 on 2026-08-15 at Alameda Creek Trail Detour.",
+      "summary_pt": "Corrida #41 em 2026-08-15 em Alameda Creek Trail Detour.",
+      "content": {
+        "en": {
+          "file": "posts/run-41-en.html",
+          "title": "Run #41 – Goats, Gels, and Detours"
+        },
+        "pt": {
+          "file": "posts/run-41-pt.html",
+          "title": "Run #41 – Cabras, gels, e voltas extras"
+        }
+      }
+    },
+    {
+      "run_number": 43,
+      "date": "2026-08-30",
+      "location": "Aracaju, Sergipe, Brazil",
+      "region": "Sergipe, Brazil",
+      "distance_miles": 15.25,
+      "distance_km": 24.54,
+      "duration": "02:27:13",
+      "pace_per_mile": "9:39",
+      "elevation_ft": "NA",
+      "device": "Pixel Watch 4",
+      "shoes": "Altra Torin 8",
+      "audiobook": "NA",
+      "company": [
+        "Paula Loures",
+        "Mark Lee",
+        "Jeff Bowers"
+      ],
+      "event_name": "UMS – Ultramaratona Sergipe",
+      "official_distance_km": 25,
+      "result": "6th place, age category 50–59",
+      "summary_en": "First official race of the 52@52 challenge: UMS Ultramaratona Sergipe 25K, with ocean, river, beach sand, heat, and a 6th-place age-category result.",
+      "summary_pt": "Primeira prova oficial do desafio 52@52: UMS Ultramaratona Sergipe 25K, com mar, rio, areia de praia, calor e 6º lugar na categoria.",
+      "content": {
+        "en": {
+          "file": "posts/run-43-en.html",
+          "title": "Run #43 – First Official Race: 25K by the Sea at UMS"
+        },
+        "pt": {
+          "file": "posts/run-43-pt.html",
+          "title": "Corrida #43 – Primeira Prova Oficial: 25K à Beira-Mar na UMS"
+        }
+      }
     }
-  }
-]
+  ]
+}

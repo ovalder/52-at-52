@@ -531,5 +531,26 @@
     "region": "California",
     "summary_en": "Run #41 on 2026-08-15 at Alameda Creek Trail Detour.",
     "summary_pt": "Corrida #41 em 2026-08-15 em Alameda Creek Trail Detour."
+  },
+  {
+    "race": 43,
+    "date": "2026-08-30",
+    "miles": 15.25,
+    "km": 24.54,
+    "time": "02:27:13",
+    "pace": "9:39",
+    "shoes": "Altra Torin 8",
+    "where": "Aracaju, Sergipe, Brazil",
+    "region": "Sergipe, Brazil",
+    "device": "Pixel Watch 4",
+    "elevation_ft": null,
+    "audiobook": null,
+    "company": [
+      "Paula Loures",
+      "Mark Lee",
+      "Jeff Bowers"
+    ],
+    "summary_en": "First official race of the 52@52 challenge: UMS Ultramaratona Sergipe 25K, with ocean, river, beach sand, heat, and a 6th-place age-category result.",
+    "summary_pt": "Primeira prova oficial do desafio 52@52: UMS Ultramaratona Sergipe 25K, com mar, rio, areia de praia, calor e 6º lugar na categoria."
   }
 ]
