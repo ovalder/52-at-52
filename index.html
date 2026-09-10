@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>52@52 — The Year of the Halves</title>
+  <meta name="description" content="52 Half-Marathons in 52 Weeks across 52 Years of Life." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    :root {
+      --bg: #070a12;
+      --card-bg: #0f172a;
+      --card-border: #1e293b;
+      --accent: #ff6b35;
+      --accent-blue: #00d2ff;
+      --accent-yellow: #facc15;
+      --accent-emerald: #10b981;
+      --accent-purple: #a855f7;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --font-main: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      padding: 24px 16px 100px;
+    }
+
+    .container { max-width: 980px; margin: 0 auto; }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .brand-group { display: flex; align-items: center; gap: 12px; }
+    .brand-logo { height: 48px; width: auto; border-radius: 8px; }
+    .brand-title { font-size: 1.4rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+    .brand-sub { font-size: 0.8rem; color: var(--accent); font-family: var(--font-mono); font-weight: 700; }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: #0d1527;
+      border: 1px solid var(--card-border);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 4px;
+    }
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-family: var(--font-main);
+      font-weight: 700;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active { background: var(--accent); color: #fff; }
+
+    .tab-nav {
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 30px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 10px 18px;
+      font-family: var(--font-main);
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover { color: #fff; }
+    .tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .tab-pane { display: none; }
+    .tab-pane.active { display: block; }
+
+    .filter-panel {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 14px;
+      align-items: end;
+    }
+    .filter-group { display: flex; flex-direction: column; gap: 6px; }
+    .filter-label { font-size: 0.72rem; text-transform: uppercase; font-family: var(--font-mono); color: var(--text-muted); }
+    .filter-input, .filter-select {
+      background: #070a12;
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 8px 10px;
+      color: #fff;
+      font-family: var(--font-main);
+      font-size: 0.85rem;
+      outline: none;
+    }
+    .filter-input:focus, .filter-select:focus { border-color: var(--accent); }
+
+    .run-nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0b1220;
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      margin-bottom: 18px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .run-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-family: var(--font-main);
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .run-nav-btn:hover:not(:disabled) {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .run-nav-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+    .run-select-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .run-select-dropdown {
+      background: #070a12;
+      border: 1px solid var(--card-border);
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      padding: 7px 12px;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .slideshow-wrapper {
+      position: relative;
+      width: 100%;
+      height: 560px;
+      background: #030508;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-bottom: 24px;
+      border: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide-img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: none;
+      margin: auto;
+    }
+    .slide-img.active { display: block; }
+
+    .slide-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 46px;
+      height: 46px;
+      background: rgba(7, 10, 18, 0.85);
+      border: 1px solid var(--card-border);
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      transition: 0.2s;
+      z-index: 2;
+    }
+    .slide-btn.prev { left: 16px; }
+    .slide-btn.next { right: 16px; }
+    .slide-btn:hover { background: var(--accent); }
+    .slide-counter {
+      position: absolute;
+      bottom: 14px;
+      right: 18px;
+      background: rgba(0, 0, 0, 0.75);
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-family: var(--font-mono);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      z-index: 2;
+    }
+
+    .run-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin-bottom: 36px;
+    }
+
+    .run-stats-grid {
+      background: #070a12;
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin-bottom: 26px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 14px;
+      font-family: var(--font-mono);
+    }
+    .rs-label { font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 2px; }
+    .rs-val { font-size: 1.25rem; font-weight: 700; color: #fff; }
+
+    .run-body, .article-body {
+      font-size: 1.15rem;
+      color: #cbd5e1;
+      line-height: 1.8;
+    }
+    .run-body h1, .run-body h2, .article-body h1, .article-body h2 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 32px 0 16px;
+      line-height: 1.3;
+    }
+    .run-body h3, .article-body h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      margin: 26px 0 12px;
+    }
+    .run-body h4, .article-body h4 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 20px 0 10px;
+    }
+    .run-body p, .article-body p { margin-bottom: 20px; }
+    .run-body ul, .run-body ol, .article-body ul, .article-body ol {
+      margin: 16px 0 24px 28px;
+      color: #cbd5e1;
+    }
+    .run-body li, .article-body li { margin-bottom: 10px; line-height: 1.7; }
+
+    .run-body a, .article-body a {
+      color: var(--accent-yellow) !important;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 700;
+      transition: color 0.2s ease;
+    }
+    .run-body a:hover, .article-body a:hover { color: #ffffff !important; }
+    .run-body img, .article-body img { max-width: 100%; border-radius: 12px; border: 1px solid var(--card-border); margin: 16px 0; }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .info-card:hover, .info-card.active {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .info-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      align-self: flex-start;
+    }
+    .info-title { font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .info-desc { font-size: 0.92rem; color: var(--text-muted); line-height: 1.55; }
+
+    .chart-container {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 28px;
+    }
+    .chart-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 16px; color: #fff; }
+
+    .table-container {
+      overflow-x: auto;
+      background: #070a12;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--card-border);
+    }
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    table.data-table th {
+      background: #0e1627;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    table.data-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: #e2e8f0;
+      vertical-align: middle;
+    }
+    table.data-table tr:hover { background: rgba(255, 255, 255, 0.02); }
+    .book-cover-img {
+      width: 52px;
+      height: 76px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .chirp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: rgba(0, 210, 255, 0.1);
+      border: 1px solid rgba(0, 210, 255, 0.3);
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 4px;
+      transition: all 0.2s;
+    }
+    .chirp-btn:hover { background: var(--accent-blue); color: #000; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="brand-group">
+      <img src="media/logo.png" alt="52@52 Logo" class="brand-logo" />
+      <div>
+        <div class="brand-title">52@52 — The Year of the Halves</div>
+        <div class="brand-sub txt" data-en="52 WEEKS • 52 HALF-MARATHONS • 52 YEARS" data-pt="52 SEMANAS • 52 MEIAS-MARATONAS • 52 ANOS">52 WEEKS • 52 HALF-MARATHONS • 52 YEARS</div>
+      </div>
+    </div>
+    <div class="lang-switcher">
+      <button type="button" class="lang-btn active" id="btn_en" onclick="setLang('en')">🇬🇧 EN</button>
+      <button type="button" class="lang-btn" id="btn_pt" onclick="setLang('pt')">🇧🇷 PT</button>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('last-run', event)">🏁 <span class="txt" data-en="Last Run" data-pt="Última Corrida">Last Run</span></button>
+    <button class="tab-btn" onclick="switchTab('all-runs', event)">🏃 <span class="txt" data-en="All Runs" data-pt="Todas as Corridas">All Runs</span></button>
+    <button class="tab-btn" onclick="switchTab('data', event)">📊 <span class="txt" data-en="Data" data-pt="Dados & Gráficos">Data</span></button>
+    <button class="tab-btn" onclick="switchTab('tips', event)">💡 <span class="txt" data-en="Tips & Reviews" data-pt="Dicas & Reviews">Tips & Reviews</span></button>
+    <button class="tab-btn" onclick="switchTab('summary', event)">📖 <span class="txt" data-en="Summary" data-pt="Resumos">Summary</span></button>
+  </nav>
+
+  <!-- TAB 1: LAST RUN -->
+  <div id="pane-last-run" class="tab-pane active">
+    <div id="lastRunContainer"></div>
+  </div>
+
+  <!-- TAB 2: ALL RUNS -->
+  <div id="pane-all-runs" class="tab-pane">
+    <div class="filter-panel">
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="Min Race #" data-pt="Corrida Mín #">Min Race #</label>
+        <input type="number" id="allRunsRaceMin" class="filter-input" placeholder="1" min="1" max="52" oninput="applyAllRunsFilter()" />
+      </div>
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="Max Race #" data-pt="Corrida Máx #">Max Race #</label>
+        <input type="number" id="allRunsRaceMax" class="filter-input" placeholder="41" min="1" max="52" oninput="applyAllRunsFilter()" />
+      </div>
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="Start Date" data-pt="Data Inicial">Start Date</label>
+        <input type="date" id="allRunsDateStart" class="filter-input" onchange="applyAllRunsFilter()" />
+      </div>
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="End Date" data-pt="Data Final">End Date</label>
+        <input type="date" id="allRunsDateEnd" class="filter-input" onchange="applyAllRunsFilter()" />
+      </div>
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="Min Distance (mi)" data-pt="Dist. Mínima (mi)">Min Dist (mi)</label>
+        <input type="number" id="allRunsMinDist" class="filter-input" step="0.1" placeholder="13.1" oninput="applyAllRunsFilter()" />
+      </div>
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="Location / Trail" data-pt="Local / Percurso">Location / Trail</label>
+        <select id="allRunsLocation" class="filter-select" onchange="applyAllRunsFilter()">
+          <option value="ALL">All Locations</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="run-nav-bar" id="runNavBar">
+      <button type="button" class="run-nav-btn" id="btnPrevRun" onclick="navigateRun(-1)">❮ <span class="txt" data-en="Previous Run" data-pt="Corrida Anterior">Previous Run</span></button>
+      <div class="run-select-wrapper">
+        <span style="font-family:var(--font-mono); font-size:0.85rem; color:var(--text-muted);" class="txt" data-en="Select Run:" data-pt="Escolher:">Select Run:</span>
+        <select id="runSelectDropdown" class="run-select-dropdown" onchange="selectRunFromDropdown(this.value)"></select>
+      </div>
+      <button type="button" class="run-nav-btn" id="btnNextRun" onclick="navigateRun(1)"><span class="txt" data-en="Next Run" data-pt="Próxima Corrida">Next Run</span> ❯</button>
+    </div>
+
+    <div id="allRunsSlideshowContainer"></div>
+    <div id="allRunsPostContainer"></div>
+  </div>
+
+  <!-- TAB 3: DATA -->
+  <div id="pane-data" class="tab-pane">
+    <div class="filter-panel">
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="Min Race #" data-pt="Corrida Mín #">Min Race #</label>
+        <input type="number" id="dataRaceMin" class="filter-input" placeholder="1" min="1" max="52" oninput="applyDataFilter()" />
+      </div>
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="Max Race #" data-pt="Corrida Máx #">Max Race #</label>
+        <input type="number" id="dataRaceMax" class="filter-input" placeholder="41" min="1" max="52" oninput="applyDataFilter()" />
+      </div>
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="Start Date" data-pt="Data Inicial">Start Date</label>
+        <input type="date" id="dataDateStart" class="filter-input" onchange="applyDataFilter()" />
+      </div>
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="End Date" data-pt="Data Final">End Date</label>
+        <input type="date" id="dataDateEnd" class="filter-input" onchange="applyDataFilter()" />
+      </div>
+      <div class="filter-group">
+        <label class="filter-label txt" data-en="Location / Trail" data-pt="Local / Percurso">Location / Trail</label>
+        <select id="dataLocation" class="filter-select" onchange="applyDataFilter()">
+          <option value="ALL">All Locations</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="run-stats-grid" style="margin-bottom: 24px;">
+      <div>
+        <div class="rs-label txt" data-en="Total Distance" data-pt="Distância Total">Total Distance</div>
+        <div class="rs-val" id="dTotalDist">-- mi</div>
+      </div>
+      <div>
+        <div class="rs-label txt" data-en="Average Pace" data-pt="Ritmo Médio">Average Pace</div>
+        <div class="rs-val" id="dAvgPace">-- /mi</div>
+      </div>
+      <div>
+        <div class="rs-label txt" data-en="Total Halves" data-pt="Meias Concluídas">Total Halves</div>
+        <div class="rs-val" id="dTotalRuns" style="color:var(--accent);">--</div>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <div class="chart-title txt" data-en="Total Accumulated Distance (Miles)" data-pt="Distância Acumulada Total (Milhas)">Total Accumulated Distance (Miles)</div>
+      <canvas id="cumulativeDistChart" height="95"></canvas>
+    </div>
+
+    <div class="chart-container">
+      <div class="chart-title txt" data-en="Pace & Distance Progression per Race" data-pt="Evolução de Ritmo & Distância por Prova">Pace & Distance Progression per Race</div>
+      <canvas id="paceDistanceChart" height="95"></canvas>
+    </div>
+
+    <div class="chart-container">
+      <div class="chart-title txt" data-en="Shoe Mileage Breakdown (Rotation)" data-pt="Quilometragem por Modelo de Tênis">Shoe Mileage Breakdown (Rotation)</div>
+      <canvas id="shoeChart" height="90"></canvas>
+    </div>
+
+    <div class="chart-container">
+      <div class="chart-title txt" data-en="🎧 Audiobooks Listened During Runs" data-pt="🎧 Audiobooks Ouvidos Durante as Corridas">🎧 Audiobooks Listened During Runs</div>
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th class="txt" data-en="Cover" data-pt="Capa">Cover</th>
+              <th class="txt" data-en="Runs" data-pt="Corridas">Runs</th>
+              <th class="txt" data-en="Audiobook Title" data-pt="Título do Audiobook">Audiobook Title</th>
+              <th class="txt" data-en="Author" data-pt="Autor">Author</th>
+              <th class="txt" data-en="Chirp Link" data-pt="Link Chirp">Chirp Link</th>
+            </tr>
+          </thead>
+          <tbody id="audiobooksTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: TIPS & REVIEWS (Inline Reading) -->
+  <div id="pane-tips" class="tab-pane">
+    <div class="card-grid">
+      <div class="info-card active" onclick="loadInlineTip('runners-loop', this)">
+        <div>
+          <span class="info-badge" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3);">Lacing Technique</span>
+          <div class="info-title txt" data-en="Runner's Loop (Heel Lock)" data-pt="Nó do Corredor (Heel Lock)">Runner's Loop (Heel Lock)</div>
+          <p class="info-desc txt" data-en="How to use the extra eyelet to lock down your heel and eliminate friction." data-pt="Como usar o último furo do tênis para travar o calcanhar e evitar bolhas.">Lacing technique to lock the heel.</p>
+        </div>
+      </div>
+
+      <div class="info-card" onclick="loadInlineTip('fuel-nutrition', this)">
+        <div>
+          <span class="info-badge" style="background: rgba(0, 210, 255, 0.15); color: #00d2ff; border: 1px solid rgba(0, 210, 255, 0.3);">Fuel & Recovery</span>
+          <div class="info-title txt" data-en="Fuel & Nutrition Strategy" data-pt="Estratégia de Nutrição & Hidratação">Fuel & Nutrition Strategy</div>
+          <p class="info-desc txt" data-en="Complete original guide on energy gels, electrolytes, and race nutrition." data-pt="Guia original com testes de géis, hidratação e recuperação.">Tested nutrition and recovery stack.</p>
+        </div>
+      </div>
+
+      <div class="info-card" onclick="loadInlineTip('runners-coffee', this)">
+        <div>
+          <span class="info-badge" style="background: rgba(255, 107, 53, 0.15); color: #ff6b35; border: 1px solid rgba(255, 107, 53, 0.3);">Pre-Run Ritual</span>
+          <div class="info-title txt" data-en="The Runner's Coffee Boost" data-pt="O Ritual do Café para Corredores">The Runner's Coffee Boost</div>
+          <p class="info-desc txt" data-en="The Sergipe coffee ritual: brewing timing, caffeine absorption peaks, and espresso fueling." data-pt="O ritual do café de Sergipe: absorção da cafeína e uso do espresso.">Sergipe coffee ritual and caffeine timing.</p>
+        </div>
+      </div>
+    </div>
+
+    <article class="run-card" id="tipInlineContent">
+      <div style="text-align:center; color:var(--text-muted); padding:30px;">Loading guide...</div>
+    </article>
+  </div>
+
+  <!-- TAB 5: SUMMARY (Inline Reading) -->
+  <div id="pane-summary" class="tab-pane">
+    <div class="card-grid">
+      <div class="info-card active" onclick="loadInlineSummary('hello-world', this)">
+        <div>
+          <span class="info-badge" style="background: rgba(168, 85, 247, 0.15); color: #a855f7; border: 1px solid rgba(168, 85, 247, 0.3);">Launch</span>
+          <div class="info-title txt" data-en="Hello World / How Everything Started" data-pt="Olá a Todos / Como Tudo Começou">Hello World / How Everything Started</div>
+          <p class="info-desc txt" data-en="The initial inspiration: turning 52 and making the commitment to run 52 half-marathons." data-pt="A largada inicial: completando 52 anos de idade e correndo 52 meias em 52 semanas.">The initial inspiration.</p>
+        </div>
+      </div>
+
+      <div class="info-card" onclick="loadInlineSummary('summary-1st-quarter', this)">
+        <div>
+          <span class="info-badge" style="background: rgba(168, 85, 247, 0.15); color: #a855f7; border: 1px solid rgba(168, 85, 247, 0.3);">Quarter 1</span>
+          <div class="info-title txt" data-en="Summary of 1st Quarter (#1 – #13)" data-pt="Resumo do 1º Trimestre (Corridas #1 a #13)">Summary of 1st Quarter (#1 – #13)</div>
+          <p class="info-desc txt" data-en="Muscular adaptations, overcoming knee discomfort, zero-drop shoes, and trail runs." data-pt="Adaptação muscular, joelho, tênis zero drop e percursos nas trilhas.">Runs 1 to 13 in a nutshell.</p>
+        </div>
+      </div>
+
+      <div class="info-card" onclick="loadInlineSummary('summary-1st-half', this)">
+        <div>
+          <span class="info-badge" style="background: rgba(168, 85, 247, 0.15); color: #a855f7; border: 1px solid rgba(168, 85, 247, 0.3);">Halfway</span>
+          <div class="info-title txt" data-en="Summary of 1st Half (#1 – #26)" data-pt="Metade do Desafio (Corridas #1 a #26)">Summary of 1st Half (#1 – #26)</div>
+          <p class="info-desc txt" data-en="Crossing 26 half-marathons: memories in Paris and Brazil, fueling, and mental consistency." data-pt="Chegando à metade: memórias em Paris e Brasil, consistência e nutrição.">A look back at the first 26 runs.</p>
+        </div>
+      </div>
+    </div>
+
+    <article class="run-card" id="summaryInlineContent">
+      <div style="text-align:center; color:var(--text-muted); padding:30px;">Loading article...</div>
+    </article>
+  </div>
+
+</div>
+
+<script>
+  let postsData = [];
+  let runImagesMap = {};
+  let postHtmlCache = {};
+  let cumulativeDistChart = null;
+  let paceDistChart = null;
+  let shoeChart = null;
+
+  const audiobooksData = [
+    { minRun: 1, maxRun: 4, runsLabel: "Run #01 – #04", title: "Born to Run", author: "Christopher McDougall", cover: "https://covers.openlibrary.org/b/isbn/9780307279187-M.jpg", chirpUrl: "https://www.chirpbooks.com/audiobooks/born-to-run-by-christopher-mcdougall" },
+    { minRun: 5, maxRun: 9, runsLabel: "Run #05 – #09", title: "NOS4A2", author: "Joe Hill", cover: "https://covers.openlibrary.org/b/isbn/9780062200570-M.jpg", chirpUrl: "https://www.chirpbooks.com/audiobooks/nos4a2-by-joe-hill" },
+    { minRun: 10, maxRun: 13, runsLabel: "Run #10 – #13", title: "End Game", author: "Jeffrey Archer", cover: "https://covers.openlibrary.org/b/isbn/9781250289650-M.jpg", chirpUrl: "https://www.chirpbooks.com/audiobooks/end-game-william-warwick-novels-by-jeffrey-archer-4972b1c499" },
+    { minRun: 14, maxRun: 18, runsLabel: "Run #14 – #18", title: "Dark Matter", author: "Blake Crouch", cover: "https://covers.openlibrary.org/b/isbn/9781101904220-M.jpg", chirpUrl: "https://www.chirpbooks.com/audiobooks/dark-matter-by-blake-crouch" },
+    { minRun: 19, maxRun: 23, runsLabel: "Run #19 – #23", title: "Project Hail Mary", author: "Andy Weir", cover: "https://covers.openlibrary.org/b/isbn/9780593135204-M.jpg", chirpUrl: "https://www.chirpbooks.com/authors/andy-weir-audiobooks" },
+    { minRun: 24, maxRun: 27, runsLabel: "Run #24 – #27", title: "All Systems Red (Murderbot #1)", author: "Martha Wells", cover: "https://covers.openlibrary.org/b/isbn/9780765397539-M.jpg", chirpUrl: "https://www.chirpbooks.com/audiobooks/all-systems-red-by-martha-wells" },
+    { minRun: 28, maxRun: 32, runsLabel: "Run #28 – #32", title: "Ready Player Two", author: "Ernest Cline", cover: "https://covers.openlibrary.org/b/isbn/9781524761332-M.jpg", chirpUrl: "https://www.chirpbooks.com/audiobooks/ready-player-two-by-ernest-cline-256a755d4e" },
+    { minRun: 33, maxRun: 36, runsLabel: "Run #33 – #36", title: "Foundation", author: "Isaac Asimov", cover: "https://covers.openlibrary.org/b/isbn/9780553293357-M.jpg", chirpUrl: "https://www.chirpbooks.com/authors/isaac-asimov-audiobooks" },
+    { minRun: 37, maxRun: 37, runsLabel: "Run #37", title: "Artificial Condition (Murderbot #2)", author: "Martha Wells", cover: "https://covers.openlibrary.org/b/isbn/9781250186928-M.jpg", chirpUrl: "https://www.chirpbooks.com/audiobooks/artificial-condition-by-martha-wells" },
+    { minRun: 38, maxRun: 41, runsLabel: "Run #38 – #41", title: "This Is Why We Lied", author: "Karin Slaughter", cover: "https://covers.openlibrary.org/b/isbn/9780063399082-M.jpg", chirpUrl: "https://www.chirpbooks.com/audiobooks/this-is-why-we-lied-by-karin-slaughter-4ecd5888c7" }
+  ];
+
+  const activeTimers = {};
+  const interactionTimeouts = {};
+  const AUTO_INTERVAL_MS = 2000;
+  const USER_PAUSE_MS = 5000;
+
+  let filteredRunsList = [];
+  let currentRunIndexInFilter = 0;
+
+  function normalizeLocation(loc) {
+    if (!loc) return "Other";
+    const l = loc.trim().toLowerCase();
+    if (l.includes("paris")) return "Paris, France";
+    if (l.includes("angel island")) return "Angel Island";
+    if (l.includes("coyote creek")) return "Coyote Creek Trail";
+    if (l.includes("alum rock")) return "Alum Rock Park";
+    if (l.includes("hellyer")) return "Hellyer County Park";
+    if (l.includes("stevens creek")) return "Stevens Creek Trail";
+    if (l.includes("guadalupe")) return "Guadalupe River / Creek";
+    if (l.includes("iron horse")) return "Iron Horse Regional Trail";
+    if (l.includes("pampulha")) return "Lagoa da Pampulha (Belo Horizonte)";
+    if (l.includes("maragogi")) return "Maragogi, Alagoas";
+    if (l.includes("aracaju")) return "Aracaju, Sergipe";
+    if (l.includes("sf bay trail") || l.includes("bay trail")) return "SF Bay Trail";
+    if (l.includes("golden gate")) return "Golden Gate Park";
+    if (l.includes("treadmill")) return "Treadmill";
+    if (l.includes("cruise")) return "Cruise Ship Track";
+    if (l.includes("santa teresa")) return "Santa Teresa Hills";
+    if (l.includes("empire")) return "Empire Hills";
+    if (l.includes("alameda creek")) return "Alameda Creek Trail";
+    if (l.includes("seaside")) return "Seaside Coastal Trail";
+    if (l.includes("south bay")) return "South Bay Trail";
+    if (l.includes("commute") || l.includes("archer")) return "San Jose Commute";
+    if (l.includes("google") || l.includes("mountain view")) return "Mountain View";
+    return loc;
+  }
+
+  function normalizeShoe(shoeName) {
+    if (!shoeName) return "Other";
+    const s = shoeName.toLowerCase();
+    if (s.includes("more trail") || s.includes("new balance")) return "NB More Trail v3";
+    if (s.includes("clifton") || s.includes("hoka")) return "Hoka Clifton 8";
+    if (s.includes("phantom") || s.includes("topo")) return "Topo Phantom 4";
+    if (s.includes("wild") || s.includes("experience")) return "Altra Experience Wild 2";
+    if (s.includes("rivera") || s.includes("altrav3")) return "Altra Rivera 3";
+    if (s.includes("escalante")) return "Altra Escalante 4";
+    return shoeName.trim();
+  }
+
+  function startAutoSlide(sliderId) {
+    stopAutoSlide(sliderId);
+    activeTimers[sliderId] = setInterval(() => advanceSlide(sliderId, 1), AUTO_INTERVAL_MS);
+  }
+
+  function stopAutoSlide(sliderId) {
+    if (activeTimers[sliderId]) {
+      clearInterval(activeTimers[sliderId]);
+      delete activeTimers[sliderId];
+    }
+  }
+
+  function advanceSlide(sliderId, step) {
+    const box = document.getElementById(sliderId);
+    if (!box) { stopAutoSlide(sliderId); return; }
+    const slides = box.querySelectorAll('.slide-img');
+    const counter = box.querySelector('.slide-counter');
+    if (!slides || slides.length <= 1) return;
+
+    let activeIdx = 0;
+    slides.forEach((s, idx) => {
+      if (s.classList.contains('active')) activeIdx = idx;
+      s.classList.remove('active');
+    });
+
+    let nextIdx = (activeIdx + step + slides.length) % slides.length;
+    slides[nextIdx].classList.add('active');
+    if (counter) counter.innerText = (nextIdx + 1) + ' / ' + slides.length;
+  }
+
+  window.stepSlide = function(sliderId, step) {
+    advanceSlide(sliderId, step);
+    stopAutoSlide(sliderId);
+    if (interactionTimeouts[sliderId]) clearTimeout(interactionTimeouts[sliderId]);
+    interactionTimeouts[sliderId] = setTimeout(() => startAutoSlide(sliderId), USER_PAUSE_MS);
+  };
+
+  function clearAllTimers() {
+    Object.keys(activeTimers).forEach(id => stopAutoSlide(id));
+    Object.keys(interactionTimeouts).forEach(id => {
+      clearTimeout(interactionTimeouts[id]);
+      delete interactionTimeouts[id];
+    });
+  }
+
+  function switchTab(tabId, ev) {
+    clearAllTimers();
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+
+    if (ev && ev.currentTarget) ev.currentTarget.classList.add('active');
+    const pane = document.getElementById('pane-' + tabId);
+    if (pane) pane.classList.add('active');
+
+    if (tabId === 'last-run') renderLastRun();
+    else if (tabId === 'all-runs') applyAllRunsFilter();
+    else if (tabId === 'data') setTimeout(renderDataTab, 50);
+    else if (tabId === 'tips') {
+      const activeCard = document.querySelector('#pane-tips .info-card.active') || document.querySelector('#pane-tips .info-card');
+      if (activeCard) activeCard.click();
+    }
+    else if (tabId === 'summary') {
+      const activeCard = document.querySelector('#pane-summary .info-card.active') || document.querySelector('#pane-summary .info-card');
+      if (activeCard) activeCard.click();
+    }
+  }
+
+  async function fetchPostHtml(rNum) {
+    const lang = localStorage.getItem('52at52_preferred_lang') || 'en';
+    const cacheKey = `${rNum}_${lang}`;
+    if (postHtmlCache[cacheKey]) return postHtmlCache[cacheKey];
+
+    try {
+      const resp = await fetch(`posts/run-${rNum.toString().padStart(2, '0')}-${lang}.html?v=${Date.now()}`);
+      if (!resp.ok) {
+        const fallback = await fetch(`posts/run-${rNum.toString().padStart(2, '0')}-en.html?v=${Date.now()}`);
+        if (!fallback.ok) return null;
+        const htmlText = await fallback.text();
+        const doc = new DOMParser().parseFromString(htmlText, 'text/html');
+        const article = doc.querySelector('.article-body') || doc.body;
+        postHtmlCache[cacheKey] = article ? article.innerHTML : null;
+        return postHtmlCache[cacheKey];
+      }
+      const htmlText = await resp.text();
+      const doc = new DOMParser().parseFromString(htmlText, 'text/html');
+      const article = doc.querySelector('.article-body') || doc.body;
+      postHtmlCache[cacheKey] = article ? article.innerHTML : null;
+    } catch (e) {
+      postHtmlCache[cacheKey] = null;
+    }
+    return postHtmlCache[cacheKey];
+  }
+
+  async function renderLastRun() {
+    const container = document.getElementById('lastRunContainer');
+    if (!container || !postsData || postsData.length === 0) return;
+
+    const lastRun = [...postsData].sort((a, b) => Number(b.race) - Number(a.race))[0];
+    const rNum = Number(lastRun.race);
+    const images = (runImagesMap && (runImagesMap[rNum] || runImagesMap[String(rNum)])) || [`run${rNum.toString().padStart(2, '0')}_01.jpg`];
+    const sliderId = `slide_last_${rNum}`;
+
+    let bodyHtml = await fetchPostHtml(rNum);
+    if (!bodyHtml) bodyHtml = `<p>Race details loaded.</p>`;
+
+    let slidesMarkup = '';
+    if (images && images.length > 0) {
+      slidesMarkup = `
+        <div class="slideshow-wrapper" id="${sliderId}">
+          ${images.map((img, idx) => `<img src="media/${img}" class="slide-img ${idx === 0 ? 'active' : ''}" alt="Run ${rNum} photo" />`).join('')}
+          ${images.length > 1 ? `
+            <div class="slide-btn prev" onclick="stepSlide('${sliderId}', -1)">&#10094;</div>
+            <div class="slide-btn next" onclick="stepSlide('${sliderId}', 1)">&#10095;</div>
+            <div class="slide-counter">1 / ${images.length}</div>
+          ` : ''}
+        </div>`;
+    }
+
+    container.innerHTML = `
+      <article class="run-card">
+        ${slidesMarkup}
+        <div class="run-stats-grid">
+          <div><div class="rs-label txt" data-en="Distance" data-pt="Distância">Distance</div><div class="rs-val">${lastRun.miles || '13.1'} mi <span style="font-size:0.75rem; color:var(--text-muted);">(${lastRun.km || '21.1'} km)</span></div></div>
+          <div><div class="rs-label txt" data-en="Time" data-pt="Tempo">Time</div><div class="rs-val" style="color:var(--accent-blue);">${lastRun.time || '--:--'}</div></div>
+          <div><div class="rs-label txt" data-en="Avg Pace" data-pt="Ritmo Médio">Avg Pace</div><div class="rs-val">${lastRun.pace || '--:--'} /mi</div></div>
+          <div><div class="rs-label txt" data-en="Shoes" data-pt="Tênis">Shoes</div><div class="rs-val" style="font-size:0.95rem;">${lastRun.shoes || 'Running Shoes'}</div></div>
+        </div>
+        <div class="run-body">${bodyHtml}</div>
+      </article>`;
+
+    if (images.length > 1) startAutoSlide(sliderId);
+  }
+
+  function applyAllRunsFilter() {
+    clearAllTimers();
+    const minRace = parseInt(document.getElementById('allRunsRaceMin').value, 10) || 1;
+    const maxRace = parseInt(document.getElementById('allRunsRaceMax').value, 10) || 52;
+    const startDate = (document.getElementById('allRunsDateStart').value || '').trim();
+    const endDate = (document.getElementById('allRunsDateEnd').value || '').trim();
+    const minDist = parseFloat(document.getElementById('allRunsMinDist').value) || 0;
+    const loc = document.getElementById('allRunsLocation').value;
+
+    filteredRunsList = (postsData || []).filter(p => {
+      const r = Number(p.race);
+      if (r < minRace || r > maxRace) return false;
+      if (startDate && p.date && p.date < startDate) return false;
+      if (endDate && p.date && p.date > endDate) return false;
+      if (minDist && (parseFloat(p.miles) || 13.1) < minDist) return false;
+      if (loc && loc !== 'ALL' && normalizeLocation(p.where) !== loc) return false;
+      return true;
+    }).sort((a, b) => Number(b.race) - Number(a.race));
+
+    currentRunIndexInFilter = 0;
+    populateRunSelectorDropdown();
+    renderSelectedRun();
+  }
+
+  function populateRunSelectorDropdown() {
+    const dropdown = document.getElementById('runSelectDropdown');
+    if (!dropdown) return;
+    dropdown.innerHTML = '';
+    filteredRunsList.forEach((run, idx) => {
+      const opt = document.createElement('option');
+      opt.value = idx;
+      opt.innerText = `Run #${run.race} — ${normalizeLocation(run.where)} (${run.date || ''})`;
+      dropdown.appendChild(opt);
+    });
+  }
+
+  window.navigateRun = function(dir) {
+    if (!filteredRunsList || filteredRunsList.length === 0) return;
+    currentRunIndexInFilter = Math.max(0, Math.min(filteredRunsList.length - 1, currentRunIndexInFilter + dir));
+    const dropdown = document.getElementById('runSelectDropdown');
+    if (dropdown) dropdown.value = currentRunIndexInFilter;
+    renderSelectedRun();
+  };
+
+  window.selectRunFromDropdown = function(idxVal) {
+    currentRunIndexInFilter = parseInt(idxVal, 10);
+    renderSelectedRun();
+  };
+
+  async function renderSelectedRun() {
+    clearAllTimers();
+    const sliderContainer = document.getElementById('allRunsSlideshowContainer');
+    const postContainer = document.getElementById('allRunsPostContainer');
+    const btnPrev = document.getElementById('btnPrevRun');
+    const btnNext = document.getElementById('btnNextRun');
+
+    if (!filteredRunsList || filteredRunsList.length === 0) {
+      if (sliderContainer) sliderContainer.innerHTML = `<p style="padding:24px; color:var(--text-muted); text-align:center;">No runs match your filter criteria.</p>`;
+      if (postContainer) postContainer.innerHTML = '';
+      if (btnPrev) btnPrev.disabled = true;
+      if (btnNext) btnNext.disabled = true;
+      return;
+    }
+
+    if (btnPrev) btnPrev.disabled = (currentRunIndexInFilter <= 0);
+    if (btnNext) btnNext.disabled = (currentRunIndexInFilter >= filteredRunsList.length - 1);
+
+    const post = filteredRunsList[currentRunIndexInFilter];
+    const rNum = Number(post.race);
+    const images = (runImagesMap && (runImagesMap[rNum] || runImagesMap[String(rNum)])) || [`run${rNum.toString().padStart(2, '0')}_01.jpg`];
+    const sliderId = `slide_all_active_${rNum}`;
+
+    let slidesMarkup = '';
+    if (images && images.length > 0) {
+      slidesMarkup = `
+        <div class="slideshow-wrapper" id="${sliderId}">
+          ${images.map((img, idx) => `<img src="media/${img}" class="slide-img ${idx === 0 ? 'active' : ''}" alt="Run ${rNum} photo" />`).join('')}
+          ${images.length > 1 ? `
+            <div class="slide-btn prev" onclick="stepSlide('${sliderId}', -1)">&#10094;</div>
+            <div class="slide-btn next" onclick="stepSlide('${sliderId}', 1)">&#10095;</div>
+            <div class="slide-counter">1 / ${images.length}</div>
+          ` : ''}
+        </div>`;
+    }
+    if (sliderContainer) sliderContainer.innerHTML = slidesMarkup;
+
+    let bodyHtml = await fetchPostHtml(rNum);
+    if (!bodyHtml) bodyHtml = `<p>Race recap details loaded.</p>`;
+
+    if (postContainer) {
+      postContainer.innerHTML = `
+        <article class="run-card">
+          <div class="run-stats-grid">
+            <div><div class="rs-label txt" data-en="Distance" data-pt="Distância">Distance</div><div class="rs-val">${post.miles || '13.1'} mi <span style="font-size:0.75rem; color:var(--text-muted);">(${post.km || '21.1'} km)</span></div></div>
+            <div><div class="rs-label txt" data-en="Time" data-pt="Tempo">Time</div><div class="rs-val" style="color:var(--accent-blue);">${post.time || '--:--'}</div></div>
+            <div><div class="rs-label txt" data-en="Avg Pace" data-pt="Ritmo Médio">Avg Pace</div><div class="rs-val">${post.pace || '--:--'} /mi</div></div>
+            <div><div class="rs-label txt" data-en="Shoes" data-pt="Tênis">Shoes</div><div class="rs-val" style="font-size:0.95rem;">${post.shoes || 'Running Shoes'}</div></div>
+          </div>
+          <div class="run-body">${bodyHtml}</div>
+        </article>`;
+    }
+    if (images.length > 1) startAutoSlide(sliderId);
+  }
+
+  window.loadInlineSummary = async function(baseName, cardEl) {
+    document.querySelectorAll('#pane-summary .info-card').forEach(c => c.classList.remove('active'));
+    if (cardEl) cardEl.classList.add('active');
+    const container = document.getElementById('summaryInlineContent');
+    container.innerHTML = `<div style="text-align:center; padding:30px; color:var(--text-muted);">Loading article...</div>`;
+    try {
+      const lang = localStorage.getItem('52at52_preferred_lang') || 'en';
+      const resp = await fetch(`summaries/${baseName}-${lang}.html?v=${Date.now()}`);
+      if (!resp.ok) {
+        const fallback = await fetch(`summaries/${baseName}-en.html?v=${Date.now()}`);
+        const text = await fallback.text();
+        container.innerHTML = `<div class="run-body">${text}</div>`;
+        return;
+      }
+      const text = await resp.text();
+      container.innerHTML = `<div class="run-body">${text}</div>`;
+    } catch (e) {
+      container.innerHTML = `<div style="padding:20px; color:#ef4444;">Unable to load summary file.</div>`;
+    }
+  };
+
+  window.loadInlineTip = async function(baseName, cardEl) {
+    document.querySelectorAll('#pane-tips .info-card').forEach(c => c.classList.remove('active'));
+    if (cardEl) cardEl.classList.add('active');
+    const container = document.getElementById('tipInlineContent');
+    container.innerHTML = `<div style="text-align:center; padding:30px; color:var(--text-muted);">Loading guide...</div>`;
+    try {
+      const lang = localStorage.getItem('52at52_preferred_lang') || 'en';
+      const folder = baseName === 'fuel-nutrition' ? 'guides' : 'tips';
+      const resp = await fetch(`${folder}/${baseName}-${lang}.html?v=${Date.now()}`);
+      if (!resp.ok) {
+        const fallback = await fetch(`${folder}/${baseName}-en.html?v=${Date.now()}`);
+        const text = await fallback.text();
+        container.innerHTML = `<div class="run-body">${text}</div>`;
+        return;
+      }
+      const text = await resp.text();
+      container.innerHTML = `<div class="run-body">${text}</div>`;
+    } catch (e) {
+      container.innerHTML = `<div style="padding:20px; color:#ef4444;">Unable to load tip content.</div>`;
+    }
+  };
+
+  function applyDataFilter() { renderDataTab(); }
+
+  function renderDataTab() {
+    const minRace = parseInt(document.getElementById('dataRaceMin').value, 10) || 1;
+    const maxRace = parseInt(document.getElementById('dataRaceMax').value, 10) || 52;
+    const startDate = (document.getElementById('dataDateStart').value || '').trim();
+    const endDate = (document.getElementById('dataDateEnd').value || '').trim();
+    const loc = document.getElementById('dataLocation').value;
+
+    const filtered = (postsData || []).filter(p => {
+      const r = Number(p.race);
+      if (r < minRace || r > maxRace) return false;
+      if (startDate && p.date && p.date < startDate) return false;
+      if (endDate && p.date && p.date > endDate) return false;
+      if (loc && loc !== 'ALL' && normalizeLocation(p.where) !== loc) return false;
+      return true;
+    }).sort((a, b) => Number(a.race) - Number(b.race));
+
+    let totalMiles = 0, totalSeconds = 0, paceCount = 0;
+    filtered.forEach(p => {
+      totalMiles += (parseFloat(p.miles) || 13.14);
+      if (p.pace && p.pace.includes(':')) {
+        const parts = p.pace.split(':');
+        totalSeconds += (parseInt(parts[0], 10) * 60) + parseInt(parts[1], 10);
+        paceCount++;
+      }
+    });
+
+    const avgPaceSec = paceCount ? Math.round(totalSeconds / paceCount) : 0;
+    const avgPaceMin = Math.floor(avgPaceSec / 60);
+    const avgPaceRem = (avgPaceSec % 60).toString().padStart(2, '0');
+
+    document.getElementById('dTotalDist').innerText = totalMiles.toFixed(1) + ' mi';
+    document.getElementById('dTotalRuns').innerText = filtered.length;
+    document.getElementById('dAvgPace').innerText = paceCount ? `${avgPaceMin}:${avgPaceRem} /mi` : '--';
+
+    const labels = filtered.map(p => `Run #${p.race}`);
+
+    let runningAccum = 0;
+    const cumulativeValues = filtered.map(p => {
+      runningAccum += (parseFloat(p.miles) || 13.14);
+      return parseFloat(runningAccum.toFixed(2));
+    });
+
+    const canvasCum = document.getElementById('cumulativeDistChart');
+    if (canvasCum && typeof Chart !== 'undefined') {
+      if (cumulativeDistChart) cumulativeDistChart.destroy();
+      cumulativeDistChart = new Chart(canvasCum, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Total Accumulated Miles',
+            data: cumulativeValues,
+            borderColor: '#10b981',
+            backgroundColor: 'rgba(16, 185, 129, 0.12)',
+            fill: true,
+            tension: 0.25,
+            pointRadius: 4,
+            pointBackgroundColor: '#10b981'
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'Plus Jakarta Sans' } } } },
+          scales: {
+            x: { grid: { color: '#1e293b' }, ticks: { color: '#94a3b8' } },
+            y: { grid: { color: '#1e293b' }, ticks: { color: '#10b981' }, title: { display: true, text: 'Total Miles', color: '#10b981' } }
+          }
+        }
+      });
+    }
+
+    const paceValues = filtered.map(p => {
+      if (!p.pace || !p.pace.includes(':')) return 9.8;
+      const parts = p.pace.split(':');
+      return parseFloat(parts[0]) + (parseFloat(parts[1]) / 60);
+    });
+    const distanceValues = filtered.map(p => parseFloat(p.miles) || 13.14);
+
+    const canvasPace = document.getElementById('paceDistanceChart');
+    if (canvasPace && typeof Chart !== 'undefined') {
+      if (paceDistChart) paceDistChart.destroy();
+      paceDistChart = new Chart(canvasPace, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            { label: 'Avg Pace (min/mi)', data: paceValues, borderColor: '#ff6b35', backgroundColor: 'rgba(255, 107, 53, 0.1)', yAxisID: 'yPace', tension: 0.35, pointRadius: 4, pointBackgroundColor: '#ff6b35' },
+            { label: 'Distance (miles)', data: distanceValues, borderColor: '#00d2ff', backgroundColor: 'transparent', borderDash: [4, 4], yAxisID: 'yDist', tension: 0.2, pointRadius: 3, pointBackgroundColor: '#00d2ff' }
+          ]
+        },
+        options: {
+          responsive: true,
+          interaction: { mode: 'index', intersect: false },
+          plugins: { legend: { labels: { color: '#f8fafc', font: { family: 'Plus Jakarta Sans' } } } },
+          scales: {
+            x: { grid: { color: '#1e293b' }, ticks: { color: '#94a3b8' } },
+            y: {
+              type: 'linear', position: 'left', reverse: true, grid: { color: '#1e293b' },
+              ticks: { color: '#ff6b35', callback: v => `${Math.floor(v)}:${Math.round((v - Math.floor(v)) * 60).toString().padStart(2, '0')}` },
+              title: { display: true, text: 'Pace (Min/Mi)', color: '#ff6b35' }
+            },
+            yDist: { type: 'linear', position: 'right', grid: { drawOnChartArea: false }, ticks: { color: '#00d2ff' }, title: { display: true, text: 'Distance (Miles)', color: '#00d2ff' } }
+          }
+        }
+      });
+    }
+
+    const shoeCounts = {};
+    filtered.forEach(p => {
+      const cleanShoe = normalizeShoe(p.shoes);
+      shoeCounts[cleanShoe] = (shoeCounts[cleanShoe] || 0) + (parseFloat(p.miles) || 13.14);
+    });
+
+    const canvasShoe = document.getElementById('shoeChart');
+    if (canvasShoe && typeof Chart !== 'undefined') {
+      if (shoeChart) shoeChart.destroy();
+      shoeChart = new Chart(canvasShoe, {
+        type: 'bar',
+        data: {
+          labels: Object.keys(shoeCounts),
+          datasets: [{ label: 'Miles Logged', data: Object.values(shoeCounts).map(v => v.toFixed(1)), backgroundColor: ['#00d2ff', '#ff6b35', '#10b981', '#a855f7', '#facc15', '#ec4899', '#38bdf8'] }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: {
+            y: { grid: { color: '#1e293b' }, ticks: { color: '#94a3b8' }, title: { display: true, text: 'Total Miles', color: '#94a3b8' } },
+            x: { grid: { color: '#1e293b' }, ticks: { color: '#94a3b8' } }
+          }
+        }
+      });
+    }
+
+    renderFilteredAudiobooks(minRace, maxRace);
+  }
+
+  function renderFilteredAudiobooks(minR, maxR) {
+    const tbody = document.getElementById('audiobooksTableBody');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    const matchedBooks = audiobooksData.filter(b => (b.maxRun >= minR && b.minRun <= maxR));
+    if (matchedBooks.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--text-muted); padding:18px;">No audiobooks recorded in this run range.</td></tr>`;
+      return;
+    }
+    matchedBooks.forEach(item => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><img src="${item.cover}" alt="${item.title} cover" class="book-cover-img" /></td>
+        <td style="font-family:var(--font-mono); font-weight:700; color:var(--accent);">${item.runsLabel}</td>
+        <td style="font-weight:700; color:#fff;">${item.title}</td>
+        <td style="color:var(--text-muted);">${item.author}</td>
+        <td><a href="${item.chirpUrl}" target="_blank" rel="noopener" class="chirp-btn">🎧 Listen on Chirp ↗</a></td>`;
+      tbody.appendChild(tr);
+    });
+  }
+
+  function populateLocations() {
+    const locSet = new Set();
+    (postsData || []).forEach(p => { if (p.where) locSet.add(normalizeLocation(p.where)); });
+    const sortedLocations = Array.from(locSet).sort();
+
+    ['allRunsLocation', 'dataLocation'].forEach(id => {
+      const sel = document.getElementById(id);
+      if (!sel) return;
+      sel.innerHTML = '<option value="ALL">All Locations</option>';
+      sortedLocations.forEach(loc => {
+        const opt = document.createElement('option');
+        opt.value = loc;
+        opt.innerText = loc;
+        sel.appendChild(opt);
+      });
+    });
+  }
+
+  function setLang(lang) {
+    localStorage.setItem('52at52_preferred_lang', lang);
+    const btnEn = document.getElementById('btn_en');
+    const btnPt = document.getElementById('btn_pt');
+    if (btnEn) btnEn.classList.toggle('active', lang === 'en');
+    if (btnPt) btnPt.classList.toggle('active', lang === 'pt');
+
+    document.querySelectorAll('.txt').forEach(el => {
+      const translation = el.getAttribute('data-' + lang);
+      if (translation) el.innerHTML = translation;
+    });
+
+    postHtmlCache = {};
+
+    if (postsData && postsData.length > 0) {
+      renderLastRun();
+      renderSelectedRun();
+    }
+
+    const activeTip = document.querySelector('#pane-tips .info-card.active');
+    if (activeTip) activeTip.click();
+
+    const activeSum = document.querySelector('#pane-summary .info-card.active');
+    if (activeSum) activeSum.click();
+  }
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      const [resP, resI] = await Promise.all([
+        fetch('posts.json'),
+        fetch('run_images.json')
+      ]);
+
+      if (resP.ok && resI.ok) {
+        postsData = await resP.json();
+        runImagesMap = await resI.json();
+      }
+    } catch (e) {
+      console.warn("Fetch notice:", e);
+    }
+
+    populateLocations();
+    const savedLang = localStorage.getItem('52at52_preferred_lang') || 'en';
+    setLang(savedLang);
+
+    renderLastRun();
+    applyAllRunsFilter();
+  });
+</script>
+</body>
+</html>

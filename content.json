@@ -1,0 +1,69 @@
+{
+  "tips": [
+    {
+      "badge": "Lacing Guide",
+      "badge_color": "#10b981",
+      "badge_bg": "rgba(16,185,129,0.15)",
+      "title_en": "Runner's Loop (Heel Lock)",
+      "title_pt": "N\u00f3 do Corredor (Heel Lock)",
+      "desc_en": "How to tie a runner's loop shoe lace knot to lock your heel firmly, prevent black toenails, and stop foot slippage on steep descents.",
+      "desc_pt": "Como amarrar o t\u00eanis com o n\u00f3 do corredor para travar o calcanhar, evitar unhas pretas e impedir o p\u00e9 de escorregar nas descidas.",
+      "url": "tips/runners-loop.html"
+    },
+    {
+      "badge": "Nutrition & Hydration",
+      "badge_color": "#00d2ff",
+      "badge_bg": "rgba(0,210,255,0.15)",
+      "title_en": "Fuel & Nutrition Guide",
+      "title_pt": "Guia de Nutri\u00e7\u00e3o & Suplementos",
+      "desc_en": "Complete analysis of tested energy gels (H\u016bma, Maurten Hydrogel, SIS), hydration packs, Nuun electrolytes, and stomach tolerance logs.",
+      "desc_pt": "An\u00e1lise completa de g\u00e9is energ\u00e9ticos testados (H\u016bma, Maurten Hydrogel, SIS), eletr\u00f3litos Nuun e toler\u00e2ncia estomacal ao longo de 41 meias.",
+      "url": "guides/fuel-nutrition.html"
+    },
+    {
+      "badge": "Pre-Run Boost",
+      "badge_color": "#ff6b35",
+      "badge_bg": "rgba(255,107,53,0.15)",
+      "title_en": "Runner's Coffee Boost",
+      "title_pt": "Caf\u00e9 para Corredores",
+      "desc_en": "The Sergipe coffee ritual: brewing timing, caffeine metabolism for distance runners, and using espresso as natural morning race fuel.",
+      "desc_pt": "O ritual do caf\u00e9 de Sergipe: timing de preparo, absor\u00e7\u00e3o de cafe\u00edna e uso do caf\u00e9 como combust\u00edvel natural pr\u00e9-treino.",
+      "url": "tips/runners-coffee.html"
+    }
+  ],
+  "reflections": [
+    {
+      "badge": "Genesis",
+      "badge_color": "#a855f7",
+      "badge_bg": "rgba(168,85,247,0.15)",
+      "title_en": "Hello World / Introduction",
+      "title_pt": "Ol\u00e1 a todos / Introdu\u00e7\u00e3o",
+      "desc_en": "The inaugural vision: turning 52 and committing to run 52 consecutive half-marathons in 52 weeks.",
+      "desc_pt": "O post inaugural de apresenta\u00e7\u00e3o do desafio pessoal: correr 52 meias-maratonas em 52 semanas ao completar 52 anos.",
+      "url_en": "https://52-at-52.com/2025/11/02/hello-world/",
+      "url_pt": "https://52-at-52.com/2025/11/02/5252/"
+    },
+    {
+      "badge": "Quarter Review",
+      "badge_color": "#a855f7",
+      "badge_bg": "rgba(168,85,247,0.15)",
+      "title_en": "Summary of 1st Quarter (#1 - #13)",
+      "title_pt": "Sum\u00e1rio do 1\u00ba Quarto (#1 - #13)",
+      "desc_en": "Runs 1 to 13 in a nutshell: muscular adaptations, overcoming knee discomfort, zero-drop shoes, and friends.",
+      "desc_pt": "Corridas 1 a 13 em poucas palavras: adapta\u00e7\u00f5es musculares, supera\u00e7\u00e3o de dores no joelho e t\u00eanis zero-drop.",
+      "url_en": "https://52-at-52.com/summary-of-the-1st-quarter-runs-1-to-13-in-a-nutshell/",
+      "url_pt": "https://52-at-52.com/summario-do-1o-quarto-corridas-1-ate-13-em-poucas-palavras/"
+    },
+    {
+      "badge": "Halfway Milestone",
+      "badge_color": "#a855f7",
+      "badge_bg": "rgba(168,85,247,0.15)",
+      "title_en": "Summary of 1st Half (#1 - #26)",
+      "title_pt": "Sum\u00e1rio da 1\u00aa Metade (#1 - #26)",
+      "desc_en": "Crossing 26 half-marathons! Reflections on international travels in Paris and Brazil, fueling, and mental stamina.",
+      "desc_pt": "Chegando \u00e0 26\u00aa meia! Reflex\u00f5es sobre viagens para Paris e Brasil, hidrata\u00e7\u00e3o e disciplina mental inabal\u00e1vel.",
+      "url_en": "https://52-at-52.com/5252-halfway-there-a-look-back-at-the-first-26-runs/",
+      "url_pt": "https://52-at-52.com/5252-na-metade-do-caminho-um-olhar-sobre-as-primeiras-26-corridas/"
+    }
+  ]
+}
