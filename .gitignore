@@ -7,16 +7,6 @@ desktop.ini
 __pycache__/
 *.py[cod]
 
-# Netlify local state
-.netlify/
-
-# Backup files created during local testing
-index.before-*.html
-migration-backup-*/
-
-# Original high-resolution photos
-incoming-runs/*/images/
-
 # Python virtual environments
 .venv/
 venv/
@@ -28,4 +18,4 @@ venv/
 
 # Videos on the media folder are too large to be stored in Git
 *.mp4
-media/
+content/new-runs/
