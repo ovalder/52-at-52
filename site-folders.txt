@@ -1,0 +1,15 @@
+﻿C:\Users\valde\OneDrive\Documents\52-at-52\assets
+C:\Users\valde\OneDrive\Documents\52-at-52\content
+C:\Users\valde\OneDrive\Documents\52-at-52\data
+C:\Users\valde\OneDrive\Documents\52-at-52\guides
+C:\Users\valde\OneDrive\Documents\52-at-52\js
+C:\Users\valde\OneDrive\Documents\52-at-52\media
+C:\Users\valde\OneDrive\Documents\52-at-52\posts
+C:\Users\valde\OneDrive\Documents\52-at-52\scripts
+C:\Users\valde\OneDrive\Documents\52-at-52\summaries
+C:\Users\valde\OneDrive\Documents\52-at-52\tips
+C:\Users\valde\OneDrive\Documents\52-at-52\assets\images
+C:\Users\valde\OneDrive\Documents\52-at-52\assets\images\run-43
+C:\Users\valde\OneDrive\Documents\52-at-52\content\new-runs
+C:\Users\valde\OneDrive\Documents\52-at-52\content\run-43
+C:\Users\valde\OneDrive\Documents\52-at-52\content\new-runs\_template

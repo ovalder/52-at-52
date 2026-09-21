@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Run #XX — 52@52 Challenge</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #131b2e;
+      --card-border: #1f2c4a;
+      --accent: #ff6b35;
+      --accent-blue: #00d2ff;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --radius-md: 14px;
+      --font-main: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-main);
+      line-height: 1.65;
+      padding: 24px 16px 80px;
+    }
+
+    .container { max-width: 820px; margin: 0 auto; }
+
+    /* Nav Bar */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      background: rgba(255, 107, 53, 0.1);
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 107, 53, 0.3);
+      transition: all 0.2s;
+    }
+    .back-btn:hover {
+      background: rgba(255, 107, 53, 0.2);
+    }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: #070a12;
+      border: 1px solid var(--card-border);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 4px;
+    }
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-family: var(--font-main);
+      font-weight: 700;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* Featured Media */
+    .hero-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      margin-bottom: 24px;
+      border: 1px solid var(--card-border);
+      display: block;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.25;
+      color: #fff;
+    }
+
+    /* Embedded Metric Strip */
+    .stats-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      margin-bottom: 28px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 14px;
+      font-family: var(--font-mono);
+    }
+    .stat-label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .stat-val {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* Article Content */
+    .article-body {
+      font-size: 1.05rem;
+      color: #cbd5e1;
+    }
+    .article-body p {
+      margin-bottom: 18px;
+    }
+
+    /* Footer Nav */
+    .post-footer {
+      margin-top: 50px;
+      padding-top: 24px;
+      border-top: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Top Navigation -->
+  
+  </div>
+
+  <!-- Featured Image -->
+  <img src="https://images.unsplash.com/photo-1533560904424-a0c61dc302ff?w=1200" alt="Run Photo" class="hero-img" />
+
+  <!-- Post Title -->
+  <h1 class="txt" 
+      data-en="Run #XX: Enter English Title Here" 
+      data-pt="Corrida #XX: Digite o Título em Português Aqui">
+      Run #XX: Enter English Title Here
+  </h1>
+
+  <!-- Race Stats Strip -->
+  <div class="stats-card">
+    <div>
+      <div class="stat-label txt" data-en="Distance" data-pt="Distância">Distance</div>
+      <div class="stat-val">13.15 mi <span style="font-size:0.75rem; color:var(--text-muted);">(21.16 km)</span></div>
+    </div>
+    <div>
+      <div class="stat-label txt" data-en="Time" data-pt="Tempo">Time</div>
+      <div class="stat-val" style="color:var(--accent-blue);">2:05:00</div>
+    </div>
+    <div>
+      <div class="stat-label txt" data-en="Avg Pace" data-pt="Ritmo">Avg Pace</div>
+      <div class="stat-val">9:30 /mi</div>
+    </div>
+    <div>
+      <div class="stat-label txt" data-en="Shoes" data-pt="Tênis">Shoes</div>
+      <div class="stat-val" style="font-size:0.95rem;">Altra Torin 8</div>
+    </div>
+  </div>
+
+  <!-- Bilingual Post Body -->
+  <div class="article-body">
+    <p class="txt"
+       data-en="Write your first paragraph in English here detailing the course conditions, morning weather, and how you felt on the trail."
+       data-pt="Escreva seu primeiro parágrafo em português aqui detalhando as condições do percurso, o clima da manhã e as sensações na trilha.">
+       Write your first paragraph in English here detailing the course conditions, morning weather, and how you felt on the trail.
+    </p>
+
+    <p class="txt"
+       data-en="Write your second paragraph in English detailing your nutrition strategy, support crew notes with Paula, or gear observations."
+       data-pt="Escreva seu segundo parágrafo em português detalhando a estratégia nutricional, apoio da Paula na bicicleta ou observações sobre o tênis.">
+       Write your second paragraph in English detailing your nutrition strategy, support crew notes with Paula, or gear observations.
+    </p>
+  </div>
+
+  <!-- Footer Nav -->
+  <div class="post-footer">
+    
+    <span style="font-size:0.85rem; color:var(--text-muted);">52@52 • The Year of the Halves</span>
+  </div>
+</div>
+
+<script>
+  function setLang(lang) {
+    localStorage.setItem('52at52_preferred_lang', lang);
+    document.getElementById('btn_en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn_pt').classList.toggle('active', lang === 'pt');
+    
+    document.querySelectorAll('.txt').forEach(el => {
+      const translation = el.getAttribute('data-' + lang);
+      if (translation) el.innerHTML = translation;
+    });
+  }
+
+  // Auto-load preferred language from browser or URL hash (#pt)
+  document.addEventListener('DOMContentLoaded', () => {
+    let lang = localStorage.getItem('52at52_preferred_lang');
+    if (window.location.hash === '#pt') lang = 'pt';
+    if (window.location.hash === '#en') lang = 'en';
+    if (!lang) lang = 'en';
+    setLang(lang);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+# Windows and macOS system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Netlify local state
+.netlify/
+
+# Backup files created during local testing
+index.before-*.html
+migration-backup-*/
+
+# Original high-resolution photos
+incoming-runs/*/images/
+
+# Python virtual environments
+.venv/
+venv/
+
+# Credentials and environment files
+.env
+.env.*
+!.env.example
+
+# Videos on the media folder are too large to be stored in Git
+*.mp4
+media/
