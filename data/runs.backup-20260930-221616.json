@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T22:16:17",
+  "generated_at": "2026-09-20T15:28:32",
   "missing_value": "NA",
   "runs": [
     {
@@ -1441,35 +1441,6 @@
       "content": {
         "en": "posts/run-46-en.html",
         "pt": "posts/run-46-pt.html"
-      }
-    },
-    {
-      "run_number": 47,
-      "date": "2026-09-27",
-      "miles": 13.9,
-      "km": 22.37,
-      "time": "03:33:48",
-      "pace": "15:23",
-      "shoes": "Altra Wild 2",
-      "where": "Quick Silver Park, Almaden",
-      "region": "California, USA",
-      "device": "Pixel Watch 4",
-      "elevation_ft": 2983.0,
-      "audiobook": "Bag of Bones",
-      "company": [
-        "NA"
-      ],
-      "event_name": "NA",
-      "official_distance_km": "NA",
-      "result": "NA",
-      "summary_en": "Run 47 - Quicksilver Solo and a New Camera Rig - English.md",
-      "summary_pt": "Corrida 47 - Quicksilver Solo e Nova Montagem de Camera - Portugues.md",
-      "media": [
-        "run47_001.png"
-      ],
-      "content": {
-        "en": "posts/run-47-en.html",
-        "pt": "posts/run-47-pt.html"
       }
     }
   ]
