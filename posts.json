@@ -15,15 +15,16 @@
   {
     "race": 2,
     "date": "2025-11-15",
-    "miles": 13.12,
-    "km": 21.11,
-    "time": "2:06:15",
-    "pace": "9:37",
+    "miles": 13.21,
+    "km": 21.26,
+    "time": "2:21:53",
+    "pace": "10:44",
     "shoes": "NB More Trail v3",
     "where": "Coyote Creek Trail",
     "region": "California",
     "summary_en": "Run #2 on 2025-11-15 at Coyote Creek Trail.",
-    "summary_pt": "Corrida #2 em 2025-11-15 em Coyote Creek Trail."
+    "summary_pt": "Corrida #2 em 2025-11-15 em Coyote Creek Trail.",
+    "elevation_ft": 1234
   },
   {
     "race": 3,
@@ -41,15 +42,16 @@
   {
     "race": 4,
     "date": "2025-11-29",
-    "miles": 13.11,
-    "km": 21.1,
-    "time": "2:05:10",
-    "pace": "9:33",
+    "miles": 13.15,
+    "km": 21.17,
+    "time": "2:11:46",
+    "pace": "10:01",
     "shoes": "NB More Trail v3",
     "where": "Coyote Creek Trail",
     "region": "California",
     "summary_en": "Run #4 on 2025-11-29 at Coyote Creek Trail.",
-    "summary_pt": "Corrida #4 em 2025-11-29 em Coyote Creek Trail."
+    "summary_pt": "Corrida #4 em 2025-11-29 em Coyote Creek Trail.",
+    "elevation_ft": 515
   },
   {
     "race": 5,
@@ -67,41 +69,44 @@
   {
     "race": 6,
     "date": "2025-12-13",
-    "miles": 13.12,
-    "km": 21.11,
-    "time": "2:04:55",
-    "pace": "9:31",
+    "miles": 13.16,
+    "km": 21.18,
+    "time": "2:19:44",
+    "pace": "10:37",
     "shoes": "Hoka Clifton 8",
     "where": "Coyote Creek Trail",
     "region": "California",
     "summary_en": "Run #6 on 2025-12-13 at Coyote Creek Trail.",
-    "summary_pt": "Corrida #6 em 2025-12-13 em Coyote Creek Trail."
+    "summary_pt": "Corrida #6 em 2025-12-13 em Coyote Creek Trail.",
+    "elevation_ft": 331
   },
   {
     "race": 7,
     "date": "2025-12-20",
-    "miles": 13.14,
-    "km": 21.15,
-    "time": "2:06:30",
-    "pace": "9:38",
+    "miles": 13.18,
+    "km": 21.21,
+    "time": "2:16:06",
+    "pace": "10:20",
     "shoes": "Hoka Clifton 8",
     "where": "Coyote Creek Trail",
     "region": "California",
     "summary_en": "Run #7 on 2025-12-20 at Coyote Creek Trail.",
-    "summary_pt": "Corrida #7 em 2025-12-20 em Coyote Creek Trail."
+    "summary_pt": "Corrida #7 em 2025-12-20 em Coyote Creek Trail.",
+    "elevation_ft": 377
   },
   {
     "race": 8,
     "date": "2025-12-27",
-    "miles": 13.1,
-    "km": 21.08,
+    "miles": 13.12,
+    "km": 21.12,
     "time": "2:02:18",
-    "pace": "9:20",
+    "pace": "9:19",
     "shoes": "Altra Escalante 4",
     "where": "Coyote Creek Trail",
     "region": "California",
     "summary_en": "Run #8 on 2025-12-27 at Coyote Creek Trail.",
-    "summary_pt": "Corrida #8 em 2025-12-27 em Coyote Creek Trail."
+    "summary_pt": "Corrida #8 em 2025-12-27 em Coyote Creek Trail.",
+    "elevation_ft": 262
   },
   {
     "race": 9,
@@ -121,13 +126,14 @@
     "date": "2026-01-10",
     "miles": 13.13,
     "km": 21.13,
-    "time": "2:04:12",
-    "pace": "9:27",
+    "time": "2:05:10",
+    "pace": "9:32",
     "shoes": "Altra Escalante 4",
     "where": "Guadalupe River Trail",
     "region": "California",
     "summary_en": "Run #10 on 2026-01-10 at Guadalupe River Trail.",
-    "summary_pt": "Corrida #10 em 2026-01-10 em Guadalupe River Trail."
+    "summary_pt": "Corrida #10 em 2026-01-10 em Guadalupe River Trail.",
+    "elevation_ft": 318
   },
   {
     "race": 11,
@@ -145,28 +151,30 @@
   {
     "race": 12,
     "date": "2026-01-18",
-    "miles": 13.11,
-    "km": 21.1,
-    "time": "2:05:40",
-    "pace": "9:35",
+    "miles": 13.12,
+    "km": 21.12,
+    "time": "2:10:47",
+    "pace": "9:58",
     "shoes": "Topo Phantom 4",
     "where": "SF Bay Trail",
     "region": "California",
     "summary_en": "Run #12 on 2026-01-18 at SF Bay Trail.",
-    "summary_pt": "Corrida #12 em 2026-01-18 em SF Bay Trail."
+    "summary_pt": "Corrida #12 em 2026-01-18 em SF Bay Trail.",
+    "elevation_ft": 164
   },
   {
     "race": 13,
     "date": "2026-01-25",
     "miles": 13.14,
     "km": 21.15,
-    "time": "2:01:50",
-    "pace": "9:16",
+    "time": "2:10:56",
+    "pace": "9:58",
     "shoes": "Topo Phantom 4",
     "where": "Hellyer County Park",
     "region": "California",
     "summary_en": "Run #13 on 2026-01-25 at Hellyer County Park.",
-    "summary_pt": "Corrida #13 em 2026-01-25 em Hellyer County Park."
+    "summary_pt": "Corrida #13 em 2026-01-25 em Hellyer County Park.",
+    "elevation_ft": 627
   },
   {
     "race": 14,
@@ -174,12 +182,13 @@
     "miles": 13.12,
     "km": 21.11,
     "time": "2:06:18",
-    "pace": "9:37",
+    "pace": "9:38",
     "shoes": "Topo Phantom 4",
     "where": "Coyote Creek Trail",
     "region": "California",
     "summary_en": "Run #14 on 2026-02-01 at Coyote Creek Trail.",
-    "summary_pt": "Corrida #14 em 2026-02-01 em Coyote Creek Trail."
+    "summary_pt": "Corrida #14 em 2026-02-01 em Coyote Creek Trail.",
+    "elevation_ft": 594
   },
   {
     "race": 15,
@@ -192,85 +201,92 @@
     "where": "Coyote Creek Trail",
     "region": "California",
     "summary_en": "Run #15 on 2026-02-14 at Coyote Creek Trail.",
-    "summary_pt": "Corrida #15 em 2026-02-14 em Coyote Creek Trail."
+    "summary_pt": "Corrida #15 em 2026-02-14 em Coyote Creek Trail.",
+    "elevation_ft": 282
   },
   {
     "race": 16,
     "date": "2026-02-21",
-    "miles": 13.11,
-    "km": 21.1,
-    "time": "2:05:30",
-    "pace": "9:34",
+    "miles": 13.88,
+    "km": 22.33,
+    "time": "2:23:41",
+    "pace": "10:21",
     "shoes": "Altra Rivera 3",
     "where": "Sightseeing Run in Paris",
     "region": "France",
     "summary_en": "Run #16 on 2026-02-21 at Sightseeing Run in Paris.",
-    "summary_pt": "Corrida #16 em 2026-02-21 em Sightseeing Run in Paris."
+    "summary_pt": "Corrida #16 em 2026-02-21 em Sightseeing Run in Paris.",
+    "elevation_ft": 463
   },
   {
     "race": 17,
     "date": "2026-03-01",
     "miles": 13.15,
     "km": 21.16,
-    "time": "2:09:12",
-    "pace": "9:49",
+    "time": "2:09:17",
+    "pace": "9:50",
     "shoes": "Topo Phantom 4",
     "where": "Lagoa da Pampulha (BH)",
     "region": "Brazil",
     "summary_en": "Run #17 on 2026-03-01 at Lagoa da Pampulha (BH).",
-    "summary_pt": "Corrida #17 em 2026-03-01 em Lagoa da Pampulha (BH)."
+    "summary_pt": "Corrida #17 em 2026-03-01 em Lagoa da Pampulha (BH).",
+    "elevation_ft": 108
   },
   {
     "race": 18,
     "date": "2026-03-07",
     "miles": 13.12,
     "km": 21.11,
-    "time": "2:12:05",
-    "pace": "10:04",
+    "time": "2:20:17",
+    "pace": "10:42",
     "shoes": "Topo Phantom 4",
     "where": "Maragogi (AL)",
     "region": "Brazil",
     "summary_en": "Run #18 on 2026-03-07 at Maragogi (AL).",
-    "summary_pt": "Corrida #18 em 2026-03-07 em Maragogi (AL)."
+    "summary_pt": "Corrida #18 em 2026-03-07 em Maragogi (AL).",
+    "elevation_ft": 131
   },
   {
     "race": 19,
     "date": "2026-03-14",
     "miles": 13.18,
     "km": 21.21,
-    "time": "2:10:15",
-    "pace": "9:53",
+    "time": "2:24:12",
+    "pace": "10:56",
     "shoes": "Topo Phantom 4",
     "where": "Aracaju (SE)",
     "region": "Brazil",
     "summary_en": "Run #19 on 2026-03-14 at Aracaju (SE).",
-    "summary_pt": "Corrida #19 em 2026-03-14 em Aracaju (SE)."
+    "summary_pt": "Corrida #19 em 2026-03-14 em Aracaju (SE).",
+    "elevation_ft": 26
   },
   {
     "race": 20,
     "date": "2026-03-21",
     "miles": 13.14,
     "km": 21.15,
-    "time": "2:04:40",
-    "pace": "9:29",
+    "time": "2:23:05",
+    "pace": "10:53",
     "shoes": "NB More Trail v3",
     "where": "Coyote Creek Trail",
     "region": "California",
     "summary_en": "Run #20 on 2026-03-21 at Coyote Creek Trail.",
-    "summary_pt": "Corrida #20 em 2026-03-21 em Coyote Creek Trail."
+    "summary_pt": "Corrida #20 em 2026-03-21 em Coyote Creek Trail.",
+    "elevation_ft": 518
   },
   {
     "race": 21,
     "date": "2026-03-28",
     "miles": 13.12,
     "km": 21.11,
-    "time": "2:06:50",
-    "pace": "9:40",
+    "time": "2:14:23",
+    "pace": "10:15",
     "shoes": "Topo Phantom 4",
     "where": "Stevens Creek Trail",
     "region": "California",
     "summary_en": "Run #21 on 2026-03-28 at Stevens Creek Trail.",
-    "summary_pt": "Corrida #21 em 2026-03-28 em Stevens Creek Trail."
+    "summary_pt": "Corrida #21 em 2026-03-28 em Stevens Creek Trail.",
+    "elevation_ft": 354
   },
   {
     "race": 22,
@@ -288,41 +304,44 @@
   {
     "race": 23,
     "date": "2026-04-11",
-    "miles": 13.16,
-    "km": 21.18,
-    "time": "2:05:15",
-    "pace": "9:31",
+    "miles": 13.39,
+    "km": 21.55,
+    "time": "2:12:17",
+    "pace": "9:53",
     "shoes": "Altra Rivera 3",
     "where": "Iron Horse Regional Trail",
     "region": "California",
     "summary_en": "Run #23 on 2026-04-11 at Iron Horse Regional Trail.",
-    "summary_pt": "Corrida #23 em 2026-04-11 em Iron Horse Regional Trail."
+    "summary_pt": "Corrida #23 em 2026-04-11 em Iron Horse Regional Trail.",
+    "elevation_ft": 210
   },
   {
     "race": 24,
     "date": "2026-04-12",
-    "miles": 13.15,
-    "km": 21.16,
-    "time": "2:08:35",
+    "miles": 13.6,
+    "km": 21.89,
+    "time": "2:12:55",
     "pace": "9:46",
     "shoes": "NB More Trail v3",
     "where": "Alum Rock Park & Streets",
     "region": "California",
     "summary_en": "Run #24 on 2026-04-12 at Alum Rock Park & Streets.",
-    "summary_pt": "Corrida #24 em 2026-04-12 em Alum Rock Park & Streets."
+    "summary_pt": "Corrida #24 em 2026-04-12 em Alum Rock Park & Streets.",
+    "elevation_ft": 594
   },
   {
     "race": 25,
     "date": "2026-04-19",
-    "miles": 13.12,
-    "km": 21.11,
+    "miles": 13.21,
+    "km": 21.26,
     "time": "2:03:50",
-    "pace": "9:26",
+    "pace": "9:22",
     "shoes": "Altra Escalante 4",
     "where": "Commute Half to Archer HQ",
     "region": "California",
     "summary_en": "Run #25 on 2026-04-19 at Commute Half to Archer HQ.",
-    "summary_pt": "Corrida #25 em 2026-04-19 em Commute Half to Archer HQ."
+    "summary_pt": "Corrida #25 em 2026-04-19 em Commute Half to Archer HQ.",
+    "elevation_ft": 220
   },
   {
     "race": 26,
@@ -335,59 +354,64 @@
     "where": "Halfway Milestone Loop",
     "region": "California",
     "summary_en": "Run #26 on 2026-04-26 at Halfway Milestone Loop.",
-    "summary_pt": "Corrida #26 em 2026-04-26 em Halfway Milestone Loop."
+    "summary_pt": "Corrida #26 em 2026-04-26 em Halfway Milestone Loop.",
+    "elevation_ft": 308
   },
   {
     "race": 27,
     "date": "2026-04-29",
     "miles": 13.14,
     "km": 21.15,
-    "time": "2:11:00",
-    "pace": "9:58",
+    "time": "2:43:27",
+    "pace": "12:26",
     "shoes": "NB More Trail v3",
     "where": "Alum Rock Hills",
     "region": "California",
     "summary_en": "Run #27 on 2026-04-29 at Alum Rock Hills.",
-    "summary_pt": "Corrida #27 em 2026-04-29 em Alum Rock Hills."
+    "summary_pt": "Corrida #27 em 2026-04-29 em Alum Rock Hills.",
+    "elevation_ft": 1972
   },
   {
     "race": 28,
     "date": "2026-05-09",
-    "miles": 13.15,
-    "km": 21.16,
-    "time": "2:15:30",
-    "pace": "10:18",
+    "miles": 13.54,
+    "km": 21.79,
+    "time": "2:41:08",
+    "pace": "11:54",
     "shoes": "NB More Trail v3",
     "where": "Angel Island Trail",
     "region": "California",
     "summary_en": "Run #28 on 2026-05-09 at Angel Island Trail.",
-    "summary_pt": "Corrida #28 em 2026-05-09 em Angel Island Trail."
+    "summary_pt": "Corrida #28 em 2026-05-09 em Angel Island Trail.",
+    "elevation_ft": 1444
   },
   {
     "race": 29,
     "date": "2026-05-16",
-    "miles": 13.12,
-    "km": 21.11,
-    "time": "2:14:15",
-    "pace": "10:14",
+    "miles": 13.17,
+    "km": 21.2,
+    "time": "2:36:30",
+    "pace": "11:53",
     "shoes": "NB More Trail v3",
     "where": "Angel Island with Paula",
     "region": "California",
     "summary_en": "Run #29 on 2026-05-16 at Angel Island with Paula.",
-    "summary_pt": "Corrida #29 em 2026-05-16 em Angel Island with Paula."
+    "summary_pt": "Corrida #29 em 2026-05-16 em Angel Island with Paula.",
+    "elevation_ft": 0
   },
   {
     "race": 30,
     "date": "2026-05-31",
-    "miles": 13.14,
-    "km": 21.15,
-    "time": "2:06:10",
-    "pace": "9:36",
+    "miles": 14.24,
+    "km": 22.92,
+    "time": "2:20:10",
+    "pace": "9:51",
     "shoes": "Hoka Clifton 8",
     "where": "Coyote Creek Reset",
     "region": "California",
     "summary_en": "Run #30 on 2026-05-31 at Coyote Creek Reset.",
-    "summary_pt": "Corrida #30 em 2026-05-31 em Coyote Creek Reset."
+    "summary_pt": "Corrida #30 em 2026-05-31 em Coyote Creek Reset.",
+    "elevation_ft": 200
   },
   {
     "race": 31,
@@ -400,59 +424,64 @@
     "where": "Seaside Coastal Trail",
     "region": "California",
     "summary_en": "Run #31 on 2026-06-07 at Seaside Coastal Trail.",
-    "summary_pt": "Corrida #31 em 2026-06-07 em Seaside Coastal Trail."
+    "summary_pt": "Corrida #31 em 2026-06-07 em Seaside Coastal Trail.",
+    "elevation_ft": 3163
   },
   {
     "race": 32,
     "date": "2026-06-14",
-    "miles": 13.12,
-    "km": 21.11,
-    "time": "2:04:20",
-    "pace": "9:28",
+    "miles": 15.07,
+    "km": 24.25,
+    "time": "2:32:47",
+    "pace": "10:08",
     "shoes": "Topo Phantom 4",
     "where": "South Bay with Marco",
     "region": "California",
     "summary_en": "Run #32 on 2026-06-14 at South Bay with Marco.",
-    "summary_pt": "Corrida #32 em 2026-06-14 em South Bay with Marco."
+    "summary_pt": "Corrida #32 em 2026-06-14 em South Bay with Marco.",
+    "elevation_ft": 2930
   },
   {
     "race": 33,
     "date": "2026-06-21",
     "miles": 13.15,
     "km": 21.16,
-    "time": "2:02:40",
-    "pace": "9:19",
+    "time": "2:07:07",
+    "pace": "9:40",
     "shoes": "Altra Escalante 4",
     "where": "Hellyer Park Fast Loop",
     "region": "California",
     "summary_en": "Run #33 on 2026-06-21 at Hellyer Park Fast Loop.",
-    "summary_pt": "Corrida #33 em 2026-06-21 em Hellyer Park Fast Loop."
+    "summary_pt": "Corrida #33 em 2026-06-21 em Hellyer Park Fast Loop.",
+    "elevation_ft": 2992
   },
   {
     "race": 34,
     "date": "2026-06-28",
     "miles": 13.11,
     "km": 21.1,
-    "time": "2:05:55",
-    "pace": "9:36",
+    "time": "2:07:50",
+    "pace": "9:45",
     "shoes": "Altra Rivera 3",
     "where": "Santa Teresa Hills",
     "region": "California",
     "summary_en": "Run #34 on 2026-06-28 at Santa Teresa Hills.",
-    "summary_pt": "Corrida #34 em 2026-06-28 em Santa Teresa Hills."
+    "summary_pt": "Corrida #34 em 2026-06-28 em Santa Teresa Hills.",
+    "elevation_ft": 335
   },
   {
     "race": 35,
     "date": "2026-07-05",
     "miles": 13.16,
     "km": 21.18,
-    "time": "2:09:30",
-    "pace": "9:50",
+    "time": "2:32:55",
+    "pace": "11:37",
     "shoes": "NB More Trail v3",
     "where": "Alum Rock & Foundation",
     "region": "California",
     "summary_en": "Run #35 on 2026-07-05 at Alum Rock & Foundation.",
-    "summary_pt": "Corrida #35 em 2026-07-05 em Alum Rock & Foundation."
+    "summary_pt": "Corrida #35 em 2026-07-05 em Alum Rock & Foundation.",
+    "elevation_ft": 699
   },
   {
     "race": 36,
@@ -465,59 +494,64 @@
     "where": "Empire Hills Heat Run",
     "region": "California",
     "summary_en": "Run #36 on 2026-07-12 at Empire Hills Heat Run.",
-    "summary_pt": "Corrida #36 em 2026-07-12 em Empire Hills Heat Run."
+    "summary_pt": "Corrida #36 em 2026-07-12 em Empire Hills Heat Run.",
+    "elevation_ft": 338
   },
   {
     "race": 37,
     "date": "2026-07-19",
-    "miles": 13.14,
-    "km": 21.15,
-    "time": "2:06:40",
-    "pace": "9:38",
+    "miles": 13.19,
+    "km": 21.23,
+    "time": "2:35:44",
+    "pace": "11:48",
     "shoes": "Topo Phantom 4",
     "where": "Guadalupe Creek Trail",
     "region": "California",
     "summary_en": "Run #37 on 2026-07-19 at Guadalupe Creek Trail.",
-    "summary_pt": "Corrida #37 em 2026-07-19 em Guadalupe Creek Trail."
+    "summary_pt": "Corrida #37 em 2026-07-19 em Guadalupe Creek Trail.",
+    "elevation_ft": 1234
   },
   {
     "race": 38,
     "date": "2026-07-26",
-    "miles": 13.15,
-    "km": 21.16,
-    "time": "2:04:50",
-    "pace": "9:29",
+    "miles": 13.33,
+    "km": 21.45,
+    "time": "2:13:27",
+    "pace": "10:01",
     "shoes": "Topo Phantom 4",
     "where": "Coyote Creek Shady Miles",
     "region": "California",
     "summary_en": "Run #38 on 2026-07-26 at Coyote Creek Shady Miles.",
-    "summary_pt": "Corrida #38 em 2026-07-26 em Coyote Creek Shady Miles."
+    "summary_pt": "Corrida #38 em 2026-07-26 em Coyote Creek Shady Miles.",
+    "elevation_ft": 443
   },
   {
     "race": 39,
     "date": "2026-08-02",
     "miles": 13.13,
     "km": 21.13,
-    "time": "2:03:15",
-    "pace": "9:23",
+    "time": "2:04:33",
+    "pace": "9:29",
     "shoes": "Hoka Clifton 8",
     "where": "Coyote Creek Trail",
     "region": "California",
     "summary_en": "Run #39 on 2026-08-02 at Coyote Creek Trail.",
-    "summary_pt": "Corrida #39 em 2026-08-02 em Coyote Creek Trail."
+    "summary_pt": "Corrida #39 em 2026-08-02 em Coyote Creek Trail.",
+    "elevation_ft": 459
   },
   {
     "race": 40,
     "date": "2026-08-09",
     "miles": 13.14,
     "km": 21.15,
-    "time": "2:05:02",
-    "pace": "9:31",
+    "time": "2:11:17",
+    "pace": "9:59",
     "shoes": "Hoka Clifton 8",
     "where": "Coyote Creek Three-Peat",
     "region": "California",
     "summary_en": "Run #40 on 2026-08-09 at Coyote Creek Three-Peat.",
-    "summary_pt": "Corrida #40 em 2026-08-09 em Coyote Creek Three-Peat."
+    "summary_pt": "Corrida #40 em 2026-08-09 em Coyote Creek Three-Peat.",
+    "elevation_ft": 466
   },
   {
     "race": 41,
@@ -530,33 +564,35 @@
     "where": "Alameda Creek Trail Detour",
     "region": "California",
     "summary_en": "Run #41 on 2026-08-15 at Alameda Creek Trail Detour.",
-    "summary_pt": "Corrida #41 em 2026-08-15 em Alameda Creek Trail Detour."
+    "summary_pt": "Corrida #41 em 2026-08-15 em Alameda Creek Trail Detour.",
+    "elevation_ft": 210
   },
   {
     "race": 42,
     "date": "2026-08-24",
     "miles": 13.4,
     "km": 21.57,
-    "time": "02:15:54",
+    "time": "2:15:54",
     "pace": "10:09",
     "shoes": "Altra Torin 8",
     "where": "Lagoa da Pampulha, Belo Horizonte",
     "region": "Minas Gerais, Brazil",
     "summary_en": "run-42-pampulha-en.md",
-    "summary_pt": "run-42-pampulha-pt.md"
+    "summary_pt": "run-42-pampulha-pt.md",
+    "elevation_ft": 184
   },
   {
     "race": 43,
     "date": "2026-08-30",
     "miles": 15.25,
     "km": 24.54,
-    "time": "02:27:13",
+    "time": "2:27:13",
     "pace": "9:39",
     "shoes": "Altra Torin 8",
     "where": "Aracaju, Sergipe, Brazil",
     "region": "Sergipe, Brazil",
     "device": "Pixel Watch 4",
-    "elevation_ft": null,
+    "elevation_ft": 151,
     "audiobook": null,
     "company": [
       "Paula Loures",
@@ -571,51 +607,55 @@
     "date": "2026-09-07",
     "miles": 13.2,
     "km": 21.24,
-    "time": "02:32:09",
+    "time": "2:32:09",
     "pace": "11:32",
     "shoes": "Altra Wild 2",
     "where": "Alum Rock Park, San Jose, California",
     "region": "California, USA",
     "summary_en": "run-44-eng.md",
-    "summary_pt": "run-44-pt.md"
+    "summary_pt": "run-44-pt.md",
+    "elevation_ft": 1181
   },
   {
     "race": 45,
     "date": "2026-09-12",
     "miles": 14.5,
     "km": 23.34,
-    "time": "03:35:15",
+    "time": "3:35:15",
     "pace": "14:51",
     "shoes": "Altra Wild 2",
     "where": "Almaden Quicksilver County Park, Almaden",
     "region": "California, USA",
     "summary_en": "Run 45 - Almaden Quicksilver County Park.md",
-    "summary_pt": "Corrida 45 - Almaden Quicksilver County Park.md"
+    "summary_pt": "Corrida 45 - Almaden Quicksilver County Park.md",
+    "elevation_ft": 2838
   },
   {
     "race": 46,
     "date": "2026-09-19",
     "miles": 14.5,
     "km": 23.34,
-    "time": "03:35:15",
+    "time": "3:35:15",
     "pace": "14:51",
     "shoes": "Altra Wild 2",
     "where": "Angel Island, California",
     "region": "California, USA",
     "summary_en": "Run 46 - Angel Island Bike Day and Sailboats.md",
-    "summary_pt": "Corrida 46 - Dia de Bike na Angel Island e Veleiros.md"
+    "summary_pt": "Corrida 46 - Dia de Bike na Angel Island e Veleiros.md",
+    "elevation_ft": 1470
   },
   {
     "race": 47,
     "date": "2026-09-27",
-    "miles": 13.9,
-    "km": 22.37,
-    "time": "03:33:48",
-    "pace": "15:23",
+    "miles": 14.26,
+    "km": 22.95,
+    "time": "3:33:48",
+    "pace": "15:00",
     "shoes": "Altra Wild 2",
     "where": "Quick Silver Park, Almaden",
     "region": "California, USA",
     "summary_en": "Run 47 - Quicksilver Solo and a New Camera Rig - English.md",
-    "summary_pt": "Corrida 47 - Quicksilver Solo e Nova Montagem de Camera - Portugues.md"
+    "summary_pt": "Corrida 47 - Quicksilver Solo e Nova Montagem de Camera - Portugues.md",
+    "elevation_ft": 2982
   }
 ]
