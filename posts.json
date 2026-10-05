@@ -425,7 +425,7 @@
     "region": "California",
     "summary_en": "Run #31 on 2026-06-07 at Seaside Coastal Trail.",
     "summary_pt": "Corrida #31 em 2026-06-07 em Seaside Coastal Trail.",
-    "elevation_ft": 121
+    "elevation_ft": 3163
   },
   {
     "race": 32,
@@ -439,7 +439,7 @@
     "region": "California",
     "summary_en": "Run #32 on 2026-06-14 at South Bay with Marco.",
     "summary_pt": "Corrida #32 em 2026-06-14 em South Bay with Marco.",
-    "elevation_ft": 110
+    "elevation_ft": 2930
   },
   {
     "race": 33,
@@ -453,7 +453,7 @@
     "region": "California",
     "summary_en": "Run #33 on 2026-06-21 at Hellyer Park Fast Loop.",
     "summary_pt": "Corrida #33 em 2026-06-21 em Hellyer Park Fast Loop.",
-    "elevation_ft": 181
+    "elevation_ft": 2992
   },
   {
     "race": 34,
@@ -657,19 +657,5 @@
     "summary_en": "Run 47 - Quicksilver Solo and a New Camera Rig - English.md",
     "summary_pt": "Corrida 47 - Quicksilver Solo e Nova Montagem de Camera - Portugues.md",
     "elevation_ft": 2982
-  },
-  {
-    "race": 48,
-    "date": "2026-10-04",
-    "miles": 21.86,
-    "km": 35.18,
-    "time": "03:59:26",
-    "pace": "10:57",
-    "elevation_ft": 371.0,
-    "shoes": "Altra Torin 8",
-    "where": "Coyote Creek Trail, San Jose",
-    "region": "California, USA",
-    "summary_en": "Run 48 - Coyote Creek Long Run - English.md",
-    "summary_pt": "Corrida 48 - Longao na Coyote Creek - Portugues.md"
   }
 ]
