@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-04T21:51:09",
+  "generated_at": "2026-10-04T22:05:10",
   "missing_value": "NA",
   "runs": [
     {
@@ -1474,25 +1474,25 @@
     },
     {
       "run_number": 48,
-      "date": "2026-09-27",
-      "miles": 13.9,
-      "km": 22.37,
-      "time": "03:33:48",
-      "pace": "15:23",
-      "shoes": "Altra Wild 2",
-      "where": "Quick Silver Park, Almaden",
+      "date": "2026-10-04",
+      "miles": 21.86,
+      "km": 35.18,
+      "time": "03:59:26",
+      "pace": "10:57",
+      "shoes": "Altra Torin 8",
+      "where": "Coyote Creek Trail, San Jose",
       "region": "California, USA",
-      "device": "Pixel Watch 4",
-      "elevation_ft": 2983.0,
-      "audiobook": "Bag of Bones",
+      "device": "Google Pixel Watch 4",
+      "elevation_ft": 371.0,
+      "audiobook": "Bag of Bones, Stephen King",
       "company": [
         "NA"
       ],
       "event_name": "NA",
       "official_distance_km": "NA",
       "result": "NA",
-      "summary_en": "Run 47 - Quicksilver Solo and a New Camera Rig - English.md",
-      "summary_pt": "Corrida 47 - Quicksilver Solo e Nova Montagem de Camera - Portugues.md",
+      "summary_en": "Run 48 - Coyote Creek Long Run - English.md",
+      "summary_pt": "Corrida 48 - Longao na Coyote Creek - Portugues.md",
       "media": [
         "run48_001.webp",
         "run48_002.png",
