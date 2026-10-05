@@ -380,7 +380,7 @@ def main() -> None:
         output_media = MEDIA_DIR / f"run{run:02d}_{index:03d}{source_media.suffix.lower()}"
         created_media.append(write_media(source_media, output_media).name)
 
-    public_record = {key: record[key] for key in ("race", "date", "miles", "km", "time", "pace", "shoes", "where", "region", "summary_en", "summary_pt")}
+    public_record = {key: record[key] for key in ("race", "date", "miles", "km", "time", "pace", "elevation_ft", "shoes", "where", "region", "summary_en", "summary_pt")}
     updated_posts = rebuild_posts(replace_only_this_run(post_records, run, public_record))
     updated_map = dict(image_map)
     updated_map[str(run)] = created_media
