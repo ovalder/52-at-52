@@ -672,5 +672,35 @@
     "region": "California, USA",
     "summary_en": "Run 48 - Coyote Creek Long Run - English.md",
     "summary_pt": "Corrida 48 - Longao na Coyote Creek - Portugues.md"
+  },
+  {
+    "race": 49,
+    "date": "2026-10-12",
+    "miles": 13.3,
+    "km": 21.4,
+    "time": "02:37:23",
+    "pace": "11:50",
+    "elevation_ft": 823.5,
+    "shoes": "Altra Experience Wild 2",
+    "audiobook": "NA",
+    "where": "Wailea-Makena, Maui Island",
+    "region": "Hawaii, USA",
+    "summary_en": "Run 49 - Maui - English.md",
+    "summary_pt": "Corrida 49 - Maui - Portugues.md"
+  },
+  {
+    "race": 50,
+    "date": "2026-10-16",
+    "miles": 13.6,
+    "km": 21.89,
+    "time": "02:26:55",
+    "pace": "10:48",
+    "elevation_ft": 882.55,
+    "shoes": "Altra Experience Wild 2",
+    "audiobook": "NA",
+    "where": "Poipu-Koloa-Omao, Kauai Island",
+    "region": "Hawaii, USA",
+    "summary_en": "Run 50 - Kauai - English.md",
+    "summary_pt": "Corrida 50 - Kauai - Portugues.md"
   }
 ]

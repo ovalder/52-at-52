@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-04T22:37:38",
+  "generated_at": "2026-10-18T16:07:50",
   "missing_value": "NA",
   "runs": [
     {
@@ -1509,6 +1509,76 @@
       "content": {
         "en": "posts/run-48-en.html",
         "pt": "posts/run-48-pt.html"
+      }
+    },
+    {
+      "run_number": 49,
+      "date": "2026-10-12",
+      "miles": 13.3,
+      "km": 21.4,
+      "time": "02:37:23",
+      "pace": "11:50",
+      "shoes": "Altra Experience Wild 2",
+      "where": "Wailea-Makena, Maui Island",
+      "region": "Hawaii, USA",
+      "device": "Google Pixel Watch 4",
+      "elevation_ft": 823.5,
+      "audiobook": "NA",
+      "company": [
+        "NA"
+      ],
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run 49 - Maui - English.md",
+      "summary_pt": "Corrida 49 - Maui - Portugues.md",
+      "media": [
+        "run49_001.webp",
+        "run49_002.png",
+        "run49_003.png",
+        "run49_004.webp",
+        "run49_005.png",
+        "run49_006.webp"
+      ],
+      "content": {
+        "en": "posts/run-49-en.html",
+        "pt": "posts/run-49-pt.html"
+      }
+    },
+    {
+      "run_number": 50,
+      "date": "2026-10-16",
+      "miles": 13.6,
+      "km": 21.89,
+      "time": "02:26:55",
+      "pace": "10:48",
+      "shoes": "Altra Experience Wild 2",
+      "where": "Poipu-Koloa-Omao, Kauai Island",
+      "region": "Hawaii, USA",
+      "device": "Google Pixel Watch 4",
+      "elevation_ft": 882.55,
+      "audiobook": "NA",
+      "company": [
+        "NA"
+      ],
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run 50 - Kauai - English.md",
+      "summary_pt": "Corrida 50 - Kauai - Portugues.md",
+      "media": [
+        "run50_001.webp",
+        "run50_002.png",
+        "run50_003.webp",
+        "run50_004.webp",
+        "run50_005.webp",
+        "run50_006.webp",
+        "run50_007.webp",
+        "run50_008.png"
+      ],
+      "content": {
+        "en": "posts/run-50-en.html",
+        "pt": "posts/run-50-pt.html"
       }
     }
   ]
