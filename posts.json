@@ -702,5 +702,20 @@
     "region": "Hawaii, USA",
     "summary_en": "Run 50 - Kauai - English.md",
     "summary_pt": "Corrida 50 - Kauai - Portugues.md"
+  },
+  {
+    "race": 51,
+    "date": "2026-10-25",
+    "miles": 13.2,
+    "km": 21.24,
+    "time": "02:39:53",
+    "pace": "12:07",
+    "elevation_ft": 1580.0,
+    "shoes": "Altra Experience Wild 2",
+    "audiobook": "Bag of Bones, Stephen King",
+    "where": "Lake Chabot Regional Park, Castro Valley",
+    "region": "California, USA",
+    "summary_en": "Run 51 - Lake Chabot - English.md",
+    "summary_pt": "Corrida 51 - Lake Chabot - Portugues.md"
   }
 ]

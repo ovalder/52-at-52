@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T16:07:50",
+  "generated_at": "2026-10-25T20:34:26",
   "missing_value": "NA",
   "runs": [
     {
@@ -1579,6 +1579,61 @@
       "content": {
         "en": "posts/run-50-en.html",
         "pt": "posts/run-50-pt.html"
+      }
+    },
+    {
+      "run_number": 51,
+      "date": "2026-10-25",
+      "miles": 13.2,
+      "km": 21.24,
+      "time": "02:39:53",
+      "pace": "12:07",
+      "shoes": "Altra Experience Wild 2",
+      "where": "Lake Chabot Regional Park, Castro Valley",
+      "region": "California, USA",
+      "device": "Google Pixel Watch 4",
+      "elevation_ft": 1580.0,
+      "audiobook": "Bag of Bones, Stephen King",
+      "company": [
+        "NA"
+      ],
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run 51 - Lake Chabot - English.md",
+      "summary_pt": "Corrida 51 - Lake Chabot - Portugues.md",
+      "media": [
+        "run51_001.webp",
+        "run51_002.webp",
+        "run51_003.webp",
+        "run51_004.webp",
+        "run51_005.webp",
+        "run51_006.webp",
+        "run51_007.webp",
+        "run51_008.webp",
+        "run51_009.webp",
+        "run51_010.webp",
+        "run51_011.webp",
+        "run51_012.webp",
+        "run51_013.webp",
+        "run51_014.webp",
+        "run51_015.webp",
+        "run51_016.webp",
+        "run51_017.webp",
+        "run51_018.webp",
+        "run51_019.webp",
+        "run51_020.webp",
+        "run51_021.webp",
+        "run51_022.webp",
+        "run51_023.webp",
+        "run51_024.webp",
+        "run51_025.webp",
+        "run51_026.webp",
+        "run51_027.png"
+      ],
+      "content": {
+        "en": "posts/run-51-en.html",
+        "pt": "posts/run-51-pt.html"
       }
     }
   ]
