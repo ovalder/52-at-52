@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-25T20:34:26",
+  "generated_at": "2026-11-01T21:57:40",
   "missing_value": "NA",
   "runs": [
     {
@@ -912,7 +912,7 @@
       "distance_km": 21.21,
       "duration": "2:08:45",
       "pace_per_mile": "9:46",
-      "elevation_ft": "NA",
+      "elevation_ft": 121,
       "device": "NA",
       "shoes": "Topo Phantom 4",
       "audiobook": "NA",
@@ -942,7 +942,7 @@
       "distance_km": 21.11,
       "duration": "2:04:20",
       "pace_per_mile": "9:28",
-      "elevation_ft": "NA",
+      "elevation_ft": 110,
       "device": "NA",
       "shoes": "Topo Phantom 4",
       "audiobook": "NA",
@@ -972,7 +972,7 @@
       "distance_km": 21.16,
       "duration": "2:02:40",
       "pace_per_mile": "9:19",
-      "elevation_ft": "NA",
+      "elevation_ft": 181,
       "device": "NA",
       "shoes": "Altra Escalante 4",
       "audiobook": "NA",
@@ -1634,6 +1634,41 @@
       "content": {
         "en": "posts/run-51-en.html",
         "pt": "posts/run-51-pt.html"
+      }
+    },
+    {
+      "run_number": 52,
+      "date": "2026-11-01",
+      "miles": 13.2,
+      "km": 21.24,
+      "time": "02:24:12",
+      "pace": "10:55",
+      "shoes": "Altra Torin 8",
+      "where": "Golden Gate Park and Presidio, San Francisco",
+      "region": "California, USA",
+      "device": "Google Pixel Watch 4",
+      "elevation_ft": 1036.0,
+      "audiobook": "NA",
+      "company": [
+        "Paula and David"
+      ],
+      "event_name": "NA",
+      "official_distance_km": "NA",
+      "result": "NA",
+      "summary_en": "Run #52 Blog Post – English.md",
+      "summary_pt": "Run #52 Blog Post – Portuguese.md",
+      "media": [
+        "run52_001.webp",
+        "run52_002.mp4",
+        "run52_003.webp",
+        "run52_004.webp",
+        "run52_005.png",
+        "run52_006.png",
+        "run52_007.webp"
+      ],
+      "content": {
+        "en": "posts/run-52-en.html",
+        "pt": "posts/run-52-pt.html"
       }
     }
   ]

@@ -425,7 +425,7 @@
     "region": "California",
     "summary_en": "Run #31 on 2026-06-07 at Seaside Coastal Trail.",
     "summary_pt": "Corrida #31 em 2026-06-07 em Seaside Coastal Trail.",
-    "elevation_ft": 3163
+    "elevation_ft": 121
   },
   {
     "race": 32,
@@ -439,7 +439,7 @@
     "region": "California",
     "summary_en": "Run #32 on 2026-06-14 at South Bay with Marco.",
     "summary_pt": "Corrida #32 em 2026-06-14 em South Bay with Marco.",
-    "elevation_ft": 2930
+    "elevation_ft": 110
   },
   {
     "race": 33,
@@ -453,7 +453,7 @@
     "region": "California",
     "summary_en": "Run #33 on 2026-06-21 at Hellyer Park Fast Loop.",
     "summary_pt": "Corrida #33 em 2026-06-21 em Hellyer Park Fast Loop.",
-    "elevation_ft": 2992
+    "elevation_ft": 181
   },
   {
     "race": 34,
@@ -717,5 +717,20 @@
     "region": "California, USA",
     "summary_en": "Run 51 - Lake Chabot - English.md",
     "summary_pt": "Corrida 51 - Lake Chabot - Portugues.md"
+  },
+  {
+    "race": 52,
+    "date": "2026-11-01",
+    "miles": 13.2,
+    "km": 21.24,
+    "time": "02:24:12",
+    "pace": "10:55",
+    "elevation_ft": 1036.0,
+    "shoes": "Altra Torin 8",
+    "audiobook": "NA",
+    "where": "Golden Gate Park and Presidio, San Francisco",
+    "region": "California, USA",
+    "summary_en": "Run #52 Blog Post – English.md",
+    "summary_pt": "Run #52 Blog Post – Portuguese.md"
   }
 ]
